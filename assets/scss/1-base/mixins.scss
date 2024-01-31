@@ -1,0 +1,49 @@
+/* Mixin for Responsive Breakpoints */
+
+@mixin max-breakpoint($point) {
+  @if $point == maxwidth {
+    @media (max-width: $maxWidth) { @content; }
+  }
+  @else if $point == desktoplarge {
+    @media (max-width: 4999px) { @content; }
+  }
+  @else if $point == desktopsmall {
+    @media (max-width: 1399px) { @content; }
+  }
+  @else if $point == tabletlarge {
+    @media (max-width: 1199px) { @content; }
+  }
+  @else if $point == tabletsmall {
+    @media (max-width: 991px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 399px) { @content; }
+  }
+  @else {
+    @media (max-width: $point) { @content; }
+  }
+}
+
+@mixin min-breakpoint($point) {
+  @if $point == minwidth {
+    @media (min-width: $minwidth) { @content; }
+  }
+  @else if $point == desktoplarge {
+    @media (min-width: 1400px) { @content; }
+  }
+  @else if $point == desktopsmall {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == tabletlarge {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $point == tabletsmall {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $point == mobile {
+    @media (min-width: 400px) { @content; }
+  }
+  @else {
+    @media (min-width: $point) { @content; }
+  }
+}

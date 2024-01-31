@@ -1,0 +1,83 @@
+:root {
+
+    // fonts family
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Quattrocento Sans', sans-serif;;
+
+    --ff-body: var(--ff-secondary);
+    --ff-heading: var(--ff-primary);
+
+    // fonts weight
+    --fw-regular: 400;
+    --fw-semi-bold: 600;
+    --fw-bold: 700;
+
+    // fonts sizing 
+    --fs-xs: 0.75rem; // 12px
+    --fs-s: 0.875rem; // 14px
+    --fs-r: 1rem; // 16px
+    --fs-m: 1.125rem; // 18px
+    --fs-l: 1.25rem; // 24px
+    --fs-xl: 1.5rem; // 32px
+    --fs-xxl: 2rem; // 40px
+
+
+    // colors
+    --clr-primary-100: rgba(0, 0, 0, 0.1);
+    --clr-primary-300: rgba(0, 0, 0, 0.3);
+    --clr-primary-500: rgba(0, 0, 0, 0.5);
+    --clr-primary-800: rgba(0, 0, 0, 0.8);
+    --clr-primary-1000: rgba(0, 0, 0, 1);
+
+    --clr-secondary-800: rgba(235, 109, 0, 0.8);
+    --clr-secondary-1000: rgba(235, 109, 0, 1);
+
+    --clr-base-300: rgba(242, 242, 242, 0.3);
+    --clr-base-500: rgba(242, 242, 242, 0.5);
+    --clr-base-1000: rgba(242, 242, 242, 1);
+
+    --clr-error: rgba(231, 76, 60, 1);
+    --clr-white: rgba(255, 255, 255, 1);
+
+
+    // grids
+    --container-size: 992px;
+
+    --gutter-space-4: 4px;
+    --gutter-space-8: 8px;
+    --gutter-space-16: 16px;
+    --gutter-space-24: 24px;
+    --gutter-space-32: 32px;
+    --gutter-space-40: 40px;
+    --gutter-space-48: 48px;
+    --gutter-space-56: 56px;
+    --gutter-space-64: 64px;
+
+
+    // transition
+    --transition-03: 0.3s ease;
+}
+
+@include min-breakpoint(tabletlarge) {
+    :root {
+        // fonts sizing
+        --fs-m: 1.25rem; // 24px
+        --fs-l: 1.5rem; // 32px
+        --fs-xl: 2rem; // 40px
+        --fs-xxl: 2.5rem; // 56px
+    }
+}
+
+@include min-breakpoint(desktopsmall) {
+    :root {
+        // grids
+        --container-size: 1144px;
+    }
+}
+
+@include min-breakpoint(desktoplarge) {
+    :root {
+        // grids
+        --container-size: 1344px;
+    }
+}

@@ -1,0 +1,147 @@
+/* RESET AND NORMALIZE CSS */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  scroll-margin-top: 135px;
+}
+@media screen and (min-width: 1200px) {
+  * {
+    scroll-margin-top: 110px;
+  }
+}
+
+ul[role=list], ol[role=list] {
+  list-style: none;
+  /* Turn off numbered and unordered list decoration */
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+iframe,
+video {
+  max-width: 100%;
+  width: 100%;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+select:disabled {
+  opacity: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+hr {
+  border: none;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 60%;
+}
+
+sub {
+  vertical-align: sub;
+  font-size: 60%;
+}

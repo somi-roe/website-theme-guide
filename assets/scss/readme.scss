@@ -1,0 +1,213 @@
+/* DEFAULt FOR ALL PAGES */
+@import '1-base/mixins';
+@import '1-base/variables'; 
+@import '1-base/reset'; 
+@import '1-base/typography'; 
+@import '1-base/utilities'; 
+
+
+/* DEFAULT LAYOUT ALL PAGES */
+@import '3-layout/grid'; 
+@import '3-layout/navigation'; 
+@import '3-layout/footer'; // we can place it below not important on above the fold
+
+
+/* STYLE FOR README ONLY */
+.readme-sec { 
+    height: 100vh;
+
+    .container-full {
+        display: flex;
+        height: 100%;
+
+        aside,
+        article {
+            overflow-y: auto;
+        }
+
+        aside {
+            width: 20%;
+            padding: var(--gutter-space-24);
+            border-right: 1px solid rgba(27, 31, 36, 0.15);
+
+            p {
+                color: var(--clr-primary-500);
+                margin-bottom: var(--gutter-space-16);
+            }
+
+            ul {
+                li {
+                    color: var(--clr-primary-1000);
+                    font-family: var(--ff-heading);
+                    font-weight: var(--fw-regular);
+                    font-size: var(--fs-m);
+                    margin: 0 0 var(--gutter-space-16) 0;
+
+                    a {
+                        color: inherit;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        article {
+            width: 80%;
+            padding: var(--gutter-space-48);  
+        }
+
+    }
+    // default table style
+    table {
+        border-collapse: separate;
+        border-spacing: 0px;
+        overflow: auto;
+        width: 100%;
+        margin: 0 0 var(--gutter-space-16) 0;
+
+        th,
+        td {
+            padding:  var(--gutter-space-16);
+            border-color: rgb(216, 222, 228);
+            border-style: solid;
+            border-width: 1px 0px 0px 1px;
+
+            &:last-child {
+                border-right-width: 1px;
+            }
+        }
+
+        thead {
+            th {
+                background-color: rgba(234, 238, 242, 0.5);
+                font-weight: var(--fw-semi-bold);
+
+                &:first-child {
+                    border-top-left-radius: 8px;
+                }
+
+                &:last-child {
+                    border-top-right-radius: 8px;
+                }
+            }
+        }
+
+        tbody {
+            code {
+                padding: 0.2em 0.4em;
+                background-color: rgba(175, 184, 193, 0.2);
+                border-radius: 4px;
+            }
+
+            tr:last-child {
+                td {
+                    border-bottom-width: 1px;
+
+                    &:first-child {
+                        border-bottom-left-radius: 8px;
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .readme-group {
+        display: none;
+        margin: 0 0 var(--gutter-space-40) 0;
+
+        &.active {
+            display: block;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        ol,
+        ul {
+            padding-left: 17px;
+
+            li {
+                line-height: 1.8;
+            }
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        ol {
+            list-style-type: decimal;
+        }
+
+        .readme-head {
+            margin: 0 0 var(--gutter-space-32) 0;
+            
+            h2 {
+                margin: 0 0 var(--gutter-space-8) 0;
+            }
+
+            .readme-subheading {
+                margin-bottom: var(--gutter-space-40);
+            }
+        }
+
+        .readme-body {
+            h3, h4 {
+                margin: 0 0 var(--gutter-space-16) 0;
+            }
+            table {
+                margin: 0 0 var(--gutter-space-24) 0;
+            }
+        }
+    }
+
+
+    // code snippet
+    .bd-code-snippet {
+        border: 1px solid rgb(216, 222, 228);
+        border-radius: 8px;
+        margin-bottom: var(--gutter-space-24);
+
+        .highlight {
+            position: relative;
+            background-color: rgba(234, 238, 242, 0.5);
+            padding: var(--gutter-space-24);
+
+            pre {
+                text-align: left;
+                display: block;
+                white-space: pre;
+                font-family: monospace;
+
+                code {
+                    word-wrap: normal;
+                    word-break: normal;
+                }
+
+                // color class
+                .cp,
+                .nt {
+                    color: #c6303e;
+                }
+                .na {
+                    color: #6f42c1;
+                }
+                .o,
+                .p {
+                    color: #333;
+                }
+                .s {
+                    color: #084298;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+// break line for desktop only
+br.s-desktop {
+    display: none;
+
+    @include min-breakpoint(desktopsmall) {
+        display: block;
+    }
+}
+
+// break line for mobile only
+br.s-mobile {
+    display: block;
+
+    @include min-breakpoint(mobilelarge) {
+        display: none;
+    }
+}
+
+// wrap 2 words to avoid one line
+.t-wrap {
+    white-space: nowrap;
+}
+
+// visually hide and show elements
+.v-hide {
+    display: none;
+}
+.v-show {
+    display: block;
+}
+
+// text alignment
+.t-center {
+    text-align: center;
+}
+.t-left {
+    text-align: left;
+}
+.t-right {
+    text-align: right;
+}

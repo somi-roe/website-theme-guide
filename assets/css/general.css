@@ -1,0 +1,239 @@
+/* DEFAULt FOR ALL PAGES */
+/* Mixin for Responsive Breakpoints */
+:root {
+  --ff-primary: "Open Sans", sans-serif;
+  --ff-secondary: "Quattrocento Sans", sans-serif;
+  --ff-body: var(--ff-secondary);
+  --ff-heading: var(--ff-primary);
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fs-xs: 0.75rem;
+  --fs-s: 0.875rem;
+  --fs-r: 1rem;
+  --fs-m: 1.125rem;
+  --fs-l: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2rem;
+  --clr-primary-100: rgba(0, 0, 0, 0.1);
+  --clr-primary-300: rgba(0, 0, 0, 0.3);
+  --clr-primary-500: rgba(0, 0, 0, 0.5);
+  --clr-primary-800: rgba(0, 0, 0, 0.8);
+  --clr-primary-1000: rgba(0, 0, 0, 1);
+  --clr-secondary-800: rgba(235, 109, 0, 0.8);
+  --clr-secondary-1000: rgba(235, 109, 0, 1);
+  --clr-base-300: rgba(242, 242, 242, 0.3);
+  --clr-base-500: rgba(242, 242, 242, 0.5);
+  --clr-base-1000: rgba(242, 242, 242, 1);
+  --clr-error: rgba(231, 76, 60, 1);
+  --clr-white: rgba(255, 255, 255, 1);
+  --container-size: 992px;
+  --gutter-space-4: 4px;
+  --gutter-space-8: 8px;
+  --gutter-space-16: 16px;
+  --gutter-space-24: 24px;
+  --gutter-space-32: 32px;
+  --gutter-space-40: 40px;
+  --gutter-space-48: 48px;
+  --gutter-space-56: 56px;
+  --gutter-space-64: 64px;
+  --transition-03: 0.3s ease;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --fs-m: 1.25rem;
+    --fs-l: 1.5rem;
+    --fs-xl: 2rem;
+    --fs-xxl: 2.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  :root {
+    --container-size: 1144px;
+  }
+}
+@media (min-width: 1400px) {
+  :root {
+    --container-size: 1344px;
+  }
+}
+/* RESET AND NORMALIZE CSS */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+* {
+  scroll-margin-top: 135px;
+}
+@media screen and (min-width: 1200px) {
+  * {
+    scroll-margin-top: 110px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a, button {
+  cursor: revert;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--clr-primary-1000);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-r);
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, .ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+h1, .h-h1 {
+  font-size: var(--fs-xxl);
+}
+
+h2, .h-h2 {
+  font-size: var(--fs-xl);
+}
+
+h3, .h-h3 {
+  font-size: var(--fs-l);
+}
+
+h4, .h-h4 {
+  font-size: var(--fs-m);
+}
+
+p, .fs-regular {
+  font-size: var(--fs-r);
+}
+
+.fs-s {
+  font-size: var(--fs-s);
+}
+
+.fs-xs {
+  font-size: var(--fs-xs);
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, .fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+br.s-desktop {
+  display: none;
+}
+@media (min-width: 1200px) {
+  br.s-desktop {
+    display: block;
+  }
+}
+
+br.s-mobile {
+  display: block;
+}
+@media (min-width: mobilelarge) {
+  br.s-mobile {
+    display: none;
+  }
+}
+
+.t-wrap {
+  white-space: nowrap;
+}
+
+.v-hide {
+  display: none;
+}
+
+.v-show {
+  display: block;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+/* THIRD PARTY PLUGIN  */
+/* DEFAULT LAYOUT ALL PAGES */
+.container {
+  width: 100%;
+  max-width: var(--container-size);
+  padding-left: var(--gutter-space-16);
+  padding-right: var(--gutter-space-16);
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: var(--container-size);
+    padding-left: var(--gutter-space-32);
+    padding-right: var(--gutter-space-32);
+  }
+}
+
+.banner-home .banner-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 600px;
+}
+@media (min-width: 1200px) {
+  .banner-home .banner-image img {
+    min-height: 450px;
+  }
+}

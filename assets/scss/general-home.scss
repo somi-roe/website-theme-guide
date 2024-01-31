@@ -1,0 +1,21 @@
+/* DEFAULt FOR ALL PAGES */
+@import '1-base/mixins';
+@import '1-base/variables'; 
+@import '1-base/reset'; 
+@import '1-base/typography'; 
+@import '1-base/utilities'; 
+
+
+/* THIRD PARTY PLUGIN  */
+// @import '2-plugin/'; 
+
+
+/* DEFAULT LAYOUT ALL PAGES */
+@import '3-layout/grid'; 
+@import '3-layout/navigation'; 
+@import '3-layout/section'; 
+@import '3-layout/footer'; // we can place it below not important on above the fold
+
+
+
+@import '4-components/banner-home'; 

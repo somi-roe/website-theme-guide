@@ -1,0 +1,58 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-base-1000);
+  color: var(--clr-primary-1000);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-r);
+  line-height: 1.4;
+}
+
+h1, h2, h3, h4, h5, h6, .ff-heading {
+  font-family: var(--ff-heading);
+}
+
+.ff-body {
+  font-family: var(--ff-body);
+}
+
+h1, .h-h1 {
+  font-size: var(--fs-xxl);
+}
+
+h2, .h-h2 {
+  font-size: var(--fs-xl);
+}
+
+h3, .h-h3 {
+  font-size: var(--fs-l);
+}
+
+h4, .h-h4 {
+  font-size: var(--fs-m);
+}
+
+p, .fs-regular {
+  font-size: var(--fs-r);
+}
+
+.fs-s {
+  font-size: var(--fs-s);
+}
+
+.fs-xs {
+  font-size: var(--fs-xs);
+}
+
+h1, h2, h3, h4, h5, h6, strong, b, .fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-semi-bold {
+  font-weight: var(--fw-semi-bold);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}

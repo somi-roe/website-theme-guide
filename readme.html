@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>Read Me</title>
+    <meta name="description" content="the description">
+    <link rel="canonical" href="the url">
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="assets/css/readme.css" as="style">
+    <link rel="stylesheet" href="assets/css/readme.css" media="all" />
+</head>
+<body>
+    
+
+
+    <section class="readme-sec">
+        <div class="container-full">
+            <aside>
+                <p class="ff-heading">Guides</p>
+                <ul>
+                    <li><a href="#" data-target="introduction">Introduction</a></li>
+                    <li><a href="#" data-target="typography">Typography</a></li>
+                    <li><a href="#" data-target="viewport-ranges">Viewport Ranges</a></li>
+                    <li><a href="#" data-target="breakpoints">Breakpoints</a></li>
+                    <li><a href="#" data-target="spacing">Spacing</a></li>
+                </ul>
+            </aside>
+            <article>
+                <div class="readme-body">
+                    <div class="readme-group active" id="introduction">
+                        <div class="readme-head">
+                            <h1 class="readme-heading">Website Theme Guide</h1>
+                            <p class="readme-subheading h-h3">
+                                Basic guidelines for the team when creating or updating the website theme.
+                            </p>
+                            <h2>Quick Start</h2>
+                            <p>
+                                Get started by using the HTML5 boilerplate below.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <div class="bd-code-snippet"> <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">"en"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">"UTF-8"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"viewport"</span> <span class="na">content</span><span class="o">=</span><span class="s">"width=device-width, initial-scale=1.0"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"robots"</span> <span class="na">content</span><span class="o">=</span><span class="s">"index, follow"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Project Name<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">"description"</span> <span class="na">content</span><span class="o">=</span><span class="s">"the description"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"canonical"</span> <span class="na">href</span><span class="o">=</span><span class="s">"the url"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"shortcut icon"</span> <span class="na">href</span><span class="o">=</span><span class="s">"assets/images/favicon.ico"</span> <span class="na">type</span><span class="o">=</span><span class="s">"image/x-icon"</span><span class="p">&gt;</span>
+
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"preload"</span> <span class="na">href</span><span class="o">=</span><span class="s">"assets/css/general-home.css"</span> <span class="na">as</span><span class="o">=</span><span class="s">"style"</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"assets/css/general-home.css"</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+                        <h3>Guide</h3>
+                        <ol>
+                            <li>Copy this HTML 5 boilerplate, setup to be seo friendly template</li>
+                            <li>Preloading the general css file to remove render blocking</li>
+                            <li>Seperate the css code for home page and other page, to reduced unused css</li>
+                            <li>We can also preload the main js file that is needed above the fold</li>
+                        </ol>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="typography">
+                        <div class="readme-head">
+                            <h2>Typography</h2>
+                            <p>
+                                This will target the common scenarios when designing responsive layouts and also shows the default column count per viewport ranges.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Viewport Range</th>
+                                        <th>Width Range</th>
+                                        <th>Column Count</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>narrow</code></td>
+                                        <td>< 768px</td>
+                                        <td>1</td>
+                                        <td>Support single column layout small tablet and mobile</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>regular</code></td>
+                                        <td>>= 768px</td>
+                                        <td>2</td>
+                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wide</code></td>
+                                        <td>>= 1400px</td>
+                                        <td>3</td>
+                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="viewport-ranges">
+                        <div class="readme-head">
+                            <h2>Viewport Ranges</h2>
+                            <p>
+                                This will target the common scenarios when designing responsive layouts and also shows the default column count per viewport ranges.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Viewport Range</th>
+                                        <th>Width Range</th>
+                                        <th>Column Count</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>narrow</code></td>
+                                        <td>< 768px</td>
+                                        <td>1</td>
+                                        <td>Support single column layout small tablet and mobile</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>regular</code></td>
+                                        <td>>= 768px</td>
+                                        <td>2</td>
+                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wide</code></td>
+                                        <td>>= 1400px</td>
+                                        <td>3</td>
+                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="breakpoints">
+                        <div class="readme-head">
+                            <h2>Breakpoints</h2>
+                            <ul>
+                                <li>Use to control when your layout can be adapted at a particular viewport or device size.</li>
+                                <li>Use media queries to architect your CSS by breakpoint</li>
+                                <li>Mobile first, responsive design is goal, suggesting to use (min-width) on the media queries.</li>
+                            </ul>
+                        </div>
+                        <div class="readme-body">
+                            <h3 class="h-h4">Min Width Breakpoints</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Min Breakpoint</th>
+                                        <th>Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>mobile</code></td>
+                                        <td>> 400px large phone and up</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>tablet small</code></td>
+                                        <td>> 768px small tablet and up</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>table large</code></td>
+                                        <td>> 992px large tablet and up</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>desktop small</code></td>
+                                        <td>> 1200px small desktop and up</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>desktop large</code></td>
+                                        <td>> 1400px large desktop and up</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3 class="h-h4">Max Width Breakpoints</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Max Breakpoint</th>
+                                        <th>Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>mobile</code></td>
+                                        <td>< 399px this will target all mobile devices</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>tablet small</code></td>
+                                        <td>< 991px this will target all small tablet devices</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>table large</code></td>
+                                        <td>< 1199px this will target all large tablet devices</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>desktop small</code></td>
+                                        <td>< 1399px this will target all small desktop devices</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>desktop large</code></td>
+                                        <td>< 4999px this will target all large desktop devices</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="spacing">
+                        <div class="readme-head">
+                            <h2>Spacing</h2>
+                            <p>
+                                This can be use as the standard spacing between elements in the website.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Space Name</th>
+                                        <th>Value</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>--space-4</code></td>
+                                        <td>4px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-8</code></td>
+                                        <td>8px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-16</code></td>
+                                        <td>16px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-24</code></td>
+                                        <td>24px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-32</code></td>
+                                        <td>32px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-40</code></td>
+                                        <td>40px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-48</code></td>
+                                        <td>48px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-56</code></td>
+                                        <td>56px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-64</code></td>
+                                        <td>64px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-72</code></td>
+                                        <td>72px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--space-80</code></td>
+                                        <td>80px</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("load", (event) => {
+            const asideBtn = document.querySelectorAll("aside ul a");
+
+            asideBtn.forEach(function (btn) {
+                btn.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    // get target ID
+                    const targetId = btn.dataset.target;
+                    const targetElement = document.getElementById(targetId);
+
+                    const currentActive = document.querySelectorAll('.active');
+                    currentActive.forEach(function (element) {
+                        if (element !== targetElement) {
+                            element.classList.remove("active");
+                        }
+                    });
+
+                    targetElement.classList.add("active");
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>

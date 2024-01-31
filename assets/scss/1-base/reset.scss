@@ -1,0 +1,51 @@
+/* RESET AND NORMALIZE CSS */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+* {
+    // customize this space
+    scroll-margin-top: 135px;
+
+    @media screen and (min-width: 1200px) {
+        scroll-margin-top: 110px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul, ol {
+    list-style: none; 
+}
+
+a, button {
+    cursor: revert;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
