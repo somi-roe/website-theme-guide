@@ -38,12 +38,9 @@ p, .fs-regular {
     font-size: var(--fs-r);
 }
 
-.fs-s {
+.fs-s,
+small {
     font-size: var(--fs-s);
-}
-
-.fs-xs {
-    font-size: var(--fs-xs);
 }
 
 // fonts weight
@@ -51,8 +48,8 @@ h1, h2, h3, h4, h5, h6, strong, b, .fw-bold {
     font-weight: var(--fw-bold);
 }
 
-.fw-semi-bold {
-    font-weight: var(--fw-semi-bold);
+.fw-semibold {
+    font-weight: var(--fw-semibold);
 }
 
 .fw-regular {

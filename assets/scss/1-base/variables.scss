@@ -2,19 +2,18 @@
 
     // fonts family
     --ff-primary: 'Open Sans', sans-serif;
-    --ff-secondary: 'Quattrocento Sans', sans-serif;;
+    --ff-secondary: 'Quattrocento Sans', sans-serif;
 
     --ff-body: var(--ff-secondary);
     --ff-heading: var(--ff-primary);
 
     // fonts weight
     --fw-regular: 400;
-    --fw-semi-bold: 600;
+    --fw-semibold: 600;
     --fw-bold: 700;
 
     // fonts sizing 
-    --fs-xs: 0.75rem; // 12px
-    --fs-s: 0.875rem; // 14px
+    --fs-s: 0.75rem; // 12px
     --fs-r: 1rem; // 16px
     --fs-m: 1.125rem; // 18px
     --fs-l: 1.25rem; // 24px
@@ -23,20 +22,16 @@
 
 
     // colors
-    --clr-primary-100: rgba(0, 0, 0, 0.1);
-    --clr-primary-300: rgba(0, 0, 0, 0.3);
-    --clr-primary-500: rgba(0, 0, 0, 0.5);
-    --clr-primary-800: rgba(0, 0, 0, 0.8);
-    --clr-primary-1000: rgba(0, 0, 0, 1);
-
-    --clr-secondary-800: rgba(235, 109, 0, 0.8);
-    --clr-secondary-1000: rgba(235, 109, 0, 1);
+    --clr-primary: rgba(0, 0, 0, 1);
+    --clr-secondary: rgba(244, 206, 20, 1);
 
     --clr-base-300: rgba(242, 242, 242, 0.3);
     --clr-base-500: rgba(242, 242, 242, 0.5);
     --clr-base-1000: rgba(242, 242, 242, 1);
 
+    --clr-success: rgb(40, 167, 69, 1);
     --clr-error: rgba(231, 76, 60, 1);
+    
     --clr-white: rgba(255, 255, 255, 1);
 
 

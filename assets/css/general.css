@@ -6,25 +6,20 @@
   --ff-body: var(--ff-secondary);
   --ff-heading: var(--ff-primary);
   --fw-regular: 400;
-  --fw-semi-bold: 600;
+  --fw-semibold: 600;
   --fw-bold: 700;
-  --fs-xs: 0.75rem;
-  --fs-s: 0.875rem;
+  --fs-s: 0.75rem;
   --fs-r: 1rem;
   --fs-m: 1.125rem;
   --fs-l: 1.25rem;
   --fs-xl: 1.5rem;
   --fs-xxl: 2rem;
-  --clr-primary-100: rgba(0, 0, 0, 0.1);
-  --clr-primary-300: rgba(0, 0, 0, 0.3);
-  --clr-primary-500: rgba(0, 0, 0, 0.5);
-  --clr-primary-800: rgba(0, 0, 0, 0.8);
-  --clr-primary-1000: rgba(0, 0, 0, 1);
-  --clr-secondary-800: rgba(235, 109, 0, 0.8);
-  --clr-secondary-1000: rgba(235, 109, 0, 1);
+  --clr-primary: rgba(0, 0, 0, 1);
+  --clr-secondary: rgba(244, 206, 20, 1);
   --clr-base-300: rgba(242, 242, 242, 0.3);
   --clr-base-500: rgba(242, 242, 242, 0.5);
   --clr-base-1000: rgba(242, 242, 242, 1);
+  --clr-success: rgb(40, 167, 69, 1);
   --clr-error: rgba(231, 76, 60, 1);
   --clr-white: rgba(255, 255, 255, 1);
   --container-size: 992px;
@@ -147,20 +142,17 @@ p, .fs-regular {
   font-size: var(--fs-r);
 }
 
-.fs-s {
+.fs-s,
+small {
   font-size: var(--fs-s);
-}
-
-.fs-xs {
-  font-size: var(--fs-xs);
 }
 
 h1, h2, h3, h4, h5, h6, strong, b, .fw-bold {
   font-weight: var(--fw-bold);
 }
 
-.fw-semi-bold {
-  font-weight: var(--fw-semi-bold);
+.fw-semibold {
+  font-weight: var(--fw-semibold);
 }
 
 .fw-regular {

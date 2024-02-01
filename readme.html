@@ -25,11 +25,12 @@
             <aside>
                 <p class="ff-heading">Guides</p>
                 <ul>
-                    <li><a href="#" data-target="introduction">Introduction</a></li>
-                    <li><a href="#" data-target="typography">Typography</a></li>
-                    <li><a href="#" data-target="viewport-ranges">Viewport Ranges</a></li>
-                    <li><a href="#" data-target="breakpoints">Breakpoints</a></li>
-                    <li><a href="#" data-target="spacing">Spacing</a></li>
+                    <li><a href="#" data-target="introduction" class="active-menu">Introduction</a></li>
+                    <li><a href="#" data-target="typography" class="">Typography</a></li>
+                    <li><a href="#" data-target="viewport-ranges" class="">Viewport Ranges</a></li>
+                    <li><a href="#" data-target="breakpoints" class="">Breakpoints</a></li>
+                    <li><a href="#" data-target="spacing" class="">Spacing</a></li>
+                    <li><a href="#" data-target="colors" class="">Colors</a></li>
                 </ul>
             </aside>
             <article>
@@ -61,12 +62,16 @@
     </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">"stylesheet"</span> <span class="na">href</span><span class="o">=</span><span class="s">"assets/css/general-home.css"</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, world!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, template<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+
+    </span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">"assets/js/main.js"</span><span class="p">&gt;</span>
 </span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></span></span></code></pre></div></div>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></span></code></pre></div></div>
                         <h3>Guide</h3>
                         <ol>
-                            <li>Copy this HTML 5 boilerplate, setup to be seo friendly template</li>
+                            <li>This setup purpose is to be a seo friendly template</li>
                             <li>Preloading the general css file to remove render blocking</li>
                             <li>Seperate the css code for home page and other page, to reduced unused css</li>
                             <li>We can also preload the main js file that is needed above the fold</li>
@@ -77,37 +82,175 @@
                         <div class="readme-head">
                             <h2>Typography</h2>
                             <p>
-                                This will target the common scenarios when designing responsive layouts and also shows the default column count per viewport ranges.
+                                Font sizes, weights and font families used across website theme.
                             </p>
                         </div>
                         <div class="readme-body">
+                            <h3>Font Family</h3>
+                            <p>
+                                Font family can be host using "Google Fonts" or if its not on google font the UX team need to provide the web version file of the font.
+                            </p>
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Viewport Range</th>
-                                        <th>Width Range</th>
-                                        <th>Column Count</th>
-                                        <th>Description</th>
+                                        <th>Variable</th>
+                                        <th>Font</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>narrow</code></td>
-                                        <td>< 768px</td>
-                                        <td>1</td>
-                                        <td>Support single column layout small tablet and mobile</td>
+                                        <td><code>--ff-primary</code></td>
+                                        <td>'Open Sans', sans-serif;</td>
                                     </tr>
                                     <tr>
-                                        <td><code>regular</code></td>
-                                        <td>>= 768px</td>
-                                        <td>2</td>
-                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                        <td><code>--ff-secondary</code></td>
+                                        <td>'Quattrocento Sans', sans-serif</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                After getting all the fonts used across the design, you can now assign it now as font body or font heading.
+                            </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Variable</th>
+                                        <th>Class</th>
+                                        <th>Sample</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>--ff-heading</code></td>
+                                        <td><code class="cp">.ff-heading</code></td>
+                                        <td><h4>Sample Heading Font</h4></td>
                                     </tr>
                                     <tr>
-                                        <td><code>wide</code></td>
-                                        <td>>= 1400px</td>
-                                        <td>3</td>
-                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                        <td><code>--ff-body</code></td>
+                                        <td><code class="cp">.ff-body</code></td>
+                                        <td><p>Sample Body Font</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Font Weight</h3>
+                            <p>
+                                Font weight options include normal, semibold and bold. This may change depends on what font family we used.
+                            </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Variable</th>
+                                        <th>Class</th>
+                                        <th>Heading Sample</th>
+                                        <th>Body Sample</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>--fw-regular</code></td>
+                                        <td><code class="cp">.fw-regular</code></td>
+                                        <td><h4 class="fw-regular">Sample Heading</h4></td>
+                                        <td><p>Sample Body</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--fw-semibold</code></td>
+                                        <td><code class="cp">.fw-semibold</code></td>
+                                        <td><h4 class="fw-semibold">Sample Heading</h4></td>
+                                        <td><p class="fw-semibold">Sample Body</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>--fw-bold</code></td>
+                                        <td><code class="cp">&lt;strong&gt;&lt;/strong&gt; .fw-bold</code></td>
+                                        <td><h4>Sample Heading</h4></td>
+                                        <td><p class="fw-bold">Sample Body</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Font Sizing</h3>
+                            <p>
+                                Font sizing has hierarchy to see size difference and dynamic assigning it on class and element for consistensy across site.
+                            </p>
+                            <p><strong>Desktop View</strong></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Element or Class</th>
+                                        <th>Sample</th>
+                                        <th>Pixel Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code class="cp">&lt;h1&gt;&lt;/h1&gt; .fs-h1</code></td>
+                                        <td><h1>Website Heading</h1></td>
+                                        <td>56px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h2&gt;&lt;/h2&gt; .fs-h2</code></td>
+                                        <td><h2>Website Heading</h2></td>
+                                        <td>40px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h3&gt;&lt;/h3&gt; .fs-h3</code></td>
+                                        <td><h3>Website Heading</h3></td>
+                                        <td>32px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h4&gt;&lt;/h4&gt; .fs-h4</code></td>
+                                        <td><h4>Website Heading</h4></td>
+                                        <td>24px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;p&gt;&lt;/p&gt; .fs-p</code></td>
+                                        <td><p>Website Body</p></td>
+                                        <td>16px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;small&gt;&lt;/small&gt; .fs-s</code></td>
+                                        <td><p class="fs-s">Website Body</p></td>
+                                        <td>12px</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p><strong>Mobile View</strong></p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Element or Class</th>
+                                        <th>Sample</th>
+                                        <th>Pixel Size</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code class="cp">&lt;h1&gt;&lt;/h1&gt; .fs-h1</code></td>
+                                        <td><h1 class="fsm-xxl">Website Heading</h1></td>
+                                        <td>40px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h2&gt;&lt;/h2&gt; .fs-h2</code></td>
+                                        <td><h2 class="fsm-xl">Website Heading</h2></td>
+                                        <td>32px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h3&gt;&lt;/h3&gt; .fs-h3</code></td>
+                                        <td><h3 class="fsm-l">Website Heading</h3></td>
+                                        <td>24px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;h4&gt;&lt;/h4&gt; .fs-h4</code></td>
+                                        <td><h4 class="fsm-m">Website Heading</h4></td>
+                                        <td>18px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;p&gt;&lt;/p&gt; .fs-p</code></td>
+                                        <td><p>Website Body</p></td>
+                                        <td>16px</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code class="cp">&lt;small&gt;&lt;/small&gt; .fs-s</code></td>
+                                        <td><p class="fs-s">Website Body</p></td>
+                                        <td>12px</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -133,7 +276,7 @@
                                 <tbody>
                                     <tr>
                                         <td><code>narrow</code></td>
-                                        <td>< 768px</td>
+                                        <td>< 575px</td>
                                         <td>1</td>
                                         <td>Support single column layout small tablet and mobile</td>
                                     </tr>
@@ -145,7 +288,7 @@
                                     </tr>
                                     <tr>
                                         <td><code>wide</code></td>
-                                        <td>>= 1400px</td>
+                                        <td>>= 1200px</td>
                                         <td>3</td>
                                         <td>Support 3 column layout regular desktop and large desktop</td>
                                     </tr>
@@ -291,6 +434,49 @@
                             </table>
                         </div>
                     </div>
+                    <div class="readme-group" id="colors">
+                        <div class="readme-head">
+                            <h2>Colors</h2>
+                            <p>
+                                This will target the common scenarios when designing responsive layouts and also shows the default column count per viewport ranges.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <h3>Text Colors</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Viewport Range</th>
+                                        <th>Width Range</th>
+                                        <th>Column Count</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>narrow</code></td>
+                                        <td>< 575px</td>
+                                        <td>1</td>
+                                        <td>Support single column layout small tablet and mobile</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>regular</code></td>
+                                        <td>>= 768px</td>
+                                        <td>2</td>
+                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wide</code></td>
+                                        <td>>= 1200px</td>
+                                        <td>3</td>
+                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <h3>Background Colors</h3>
+                            <h3>Border Colors</h3>
+                        </div>
+                    </div>
                 </div>
             </article>
         </div>
@@ -303,6 +489,15 @@
             asideBtn.forEach(function (btn) {
                 btn.addEventListener("click", function(e) {
                     e.preventDefault();
+
+                    // Remove "active" class from all buttons
+                    asideBtn.forEach(function (button) {
+                        button.classList.remove("active-menu");
+                    });
+
+                    // Add "active" class to the clicked button
+                    btn.classList.add("active-menu");
+
                     // get target ID
                     const targetId = btn.dataset.target;
                     const targetElement = document.getElementById(targetId);
