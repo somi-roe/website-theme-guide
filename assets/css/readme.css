@@ -357,7 +357,7 @@ br.s-mobile {
 .readme-sec .readme-group .readme-body h3, .readme-sec .readme-group .readme-body h4, .readme-sec .readme-group .readme-body p {
   margin: 0 0 var(--gutter-space-16) 0;
 }
-.readme-sec .readme-group .readme-body table {
+.readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol {
   margin: 0 0 var(--gutter-space-24) 0;
 }
 .readme-sec code {

@@ -31,6 +31,8 @@
                     <li><a href="#" data-target="breakpoints" class="">Breakpoints</a></li>
                     <li><a href="#" data-target="spacing" class="">Spacing</a></li>
                     <li><a href="#" data-target="colors" class="">Colors</a></li>
+                    <li><a href="#" data-target="seo" class="">SEO Best Practices</a></li>
+                    <li><a href="#" data-target="accessibility" class="">Accessibility</a></li>
                 </ul>
             </aside>
             <article>
@@ -475,6 +477,91 @@
                             </table>
                             <h3>Background Colors</h3>
                             <h3>Border Colors</h3>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="seo">
+                        <div class="readme-head">
+                            <h2>SEO Best Practices</h2>
+                            <p>
+                                Our goal is to make our website a seo friendly.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <h3>Use of Heading Tags</h3>
+                            <p>
+                                When using <code class="cp">&lt;h1&gt;&lt;/h1&gt;</code>, <code class="cp">&lt;h2&gt;&lt;/h2&gt;</code>, <code class="cp">&lt;h3&gt;&lt;/h3&gt;</code>, <code class="cp">&lt;h4&gt;&lt;/h4&gt;</code>,<code class="cp">&lt;h5&gt;&lt;/h5&gt;</code>, <code class="cp">&lt;h6&gt;&lt;/h6&gt;</code> these heading:
+                            </p>
+                            <ul>
+                                <li>Make sure it has hierarchy</li>
+                                <li>Avoid multiple <code>h1</code> tag in page</li>
+                            </ul>
+                            <h3>Optimize Images</h3>
+                            <p>
+                                When uploading photos on the website make sure the image is:
+                            </p>
+                            <ul>
+                                <li>Using webp file format</li>
+                                <li>Properly resized</li>
+                                <li>Compressed file size </li>
+                            </ul>
+                            <h3>Lazyloading</h3>
+                            <p>
+                                Use lazyload to images or videos not needed above the fold.
+                            </p>
+                            <h3>Third-party Plugins</h3>
+                            <p>
+                                Minimize the use of third-party plugins for CSS or JS, if ever needed a plugin find a lightweight version.
+                            </p>
+                            <h3>Core Web Vitals</h3>
+                            <p>
+                                Make sure the website pass the core web vitals. We can use lighthouse to check this and see diagnostics.
+                            </p>
+                            <p><strong>Checklist</strong></p>
+                            <ul>
+                                <li>Eliminate Render Blocking</li>
+                                <li>Reduced unused CSS or JS</li>
+                                <li>Minify CSS or JS</li>
+                                <li>Avoid an excessive DOM size</li>
+                                <li>Defer offscreen images</li>
+                                <li>Serve images in next-gen formats</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="readme-group" id="accessibility">
+                        <div class="readme-head">
+                            <h2>Accessibility</h2>
+                        </div>
+                        <div class="readme-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Viewport Range</th>
+                                        <th>Width Range</th>
+                                        <th>Column Count</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>narrow</code></td>
+                                        <td>< 575px</td>
+                                        <td>1</td>
+                                        <td>Support single column layout small tablet and mobile</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>regular</code></td>
+                                        <td>>= 768px</td>
+                                        <td>2</td>
+                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>wide</code></td>
+                                        <td>>= 1200px</td>
+                                        <td>3</td>
+                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
