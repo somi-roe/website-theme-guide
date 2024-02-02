@@ -54,7 +54,7 @@
                     color: var(--clr-primary-1000);
                     font-family: var(--ff-heading);
                     font-weight: var(--fw-regular);
-                    font-size: var(--fs-m);
+                    font-size: var(--fs-r);
                     margin: 0 0 var(--gutter-space-24) 0;
 
                     a {
@@ -188,8 +188,19 @@
             h3, h4, p {
                 margin: 0 0 var(--gutter-space-16) 0;
             }
-            table, ul, ol {
+            table, ul, ol, img {
                 margin: 0 0 var(--gutter-space-24) 0;
+            }
+
+            code {
+                &.t {
+                    padding: 0.2em 0.4em;
+                    background-color: rgba(175, 184, 193, 0.2);
+                    color: #084298;
+                    border-radius: 4px;
+                    font-weight: var(--fw-bold);
+                    font-size: var(--fs-s);
+                }
             }
         }
     }

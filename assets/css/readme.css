@@ -257,7 +257,7 @@ br.s-mobile {
   color: var(--clr-primary-1000);
   font-family: var(--ff-heading);
   font-weight: var(--fw-regular);
-  font-size: var(--fs-m);
+  font-size: var(--fs-r);
   margin: 0 0 var(--gutter-space-24) 0;
 }
 .readme-sec .container-full aside ul li a {
@@ -357,8 +357,16 @@ br.s-mobile {
 .readme-sec .readme-group .readme-body h3, .readme-sec .readme-group .readme-body h4, .readme-sec .readme-group .readme-body p {
   margin: 0 0 var(--gutter-space-16) 0;
 }
-.readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol {
+.readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol, .readme-sec .readme-group .readme-body img {
   margin: 0 0 var(--gutter-space-24) 0;
+}
+.readme-sec .readme-group .readme-body code.t {
+  padding: 0.2em 0.4em;
+  background-color: rgba(175, 184, 193, 0.2);
+  color: #084298;
+  border-radius: 4px;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-s);
 }
 .readme-sec code {
   font-family: monospace;
