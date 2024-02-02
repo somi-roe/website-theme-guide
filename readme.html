@@ -486,7 +486,7 @@
                             <p>
                                 The goal is to reduce the impact of these render-blocking URLs by inlining critical resources, deferring non-critical resources, and removing anything unused.
                             </p>
-                            <p><strong>Current Solution</strong></p>
+                            <p class="mb-0"><strong>Current Solution</strong></p>
                             <ul>
                                 <li>Preloading the critical "general-home" css file. <code class="t">&lt;link rel="preload" href="assets/css/general-home.css" as="style"&gt;</code></li>
                                 <li>Preloading the critical "main" js file <code class="t">&lt;link rel="preload" href="assets/js/main.js" as="script"&gt;</code></li>
@@ -497,7 +497,7 @@
                             <p>
                                 A large DOM tree can slow down your page performance.
                             </p>
-                            <p><strong>Current Solution</strong></p>
+                            <p class="mb-0"><strong>Current Solution</strong></p>
                             <ul>
                                 <li>Remove unnecessary DOM element on the page.</li>
                                 <li>Avoid creating a large DOM tree.</li>
@@ -506,21 +506,28 @@
                             <p>
                                 Remove the unused CSS or JS to reduce unnecessary bytes consumed by network activity.
                             </p>
-                            <p><strong>Current Solution</strong></p>
+                            <p class="mb-0"><strong>Current Solution</strong></p>
                             <ul>
                                 <li>
-                                    Separate the CSS or JS of the home page <code class="t">&lt;link rel="stylesheet" href="assets/css/general-home.css"&gt;</code> from other pages <code class="t">&lt;link rel="stylesheet" href="assets/css/general-others.css"&gt;</code>
+                                    Separate the CSS of the home page <code class="t">&lt;link rel="stylesheet" href="assets/css/general-home.css"&gt;</code> from other pages <code class="t">&lt;link rel="stylesheet" href="assets/css/general-others.css"&gt;</code>
+                                </li>
+                                <li>
+                                    Separate the JS per page to reduce execution time.
                                 </li>
                                 <li>
                                     If using third-party css or js plugin, only load the file that needed, dont load entire file of the plugin.
                                 </li>
                             </ul>
+                            <h3>Minify CSS or JS</h3>
+                            <p>
+                                Make sure the css and js file loaded on site is minified version to reduce network payload sizes.
+                            </p>
                             <h3>Optimize Images or Videos</h3>
-                            <p><strong>Current Solution</strong></p>
+                            <p class="mb-0"><strong>Current Solution</strong></p>
                             <ul>
                                 <li>Lazyloading offscreen images or videos. <code class="t">&lt;img loading="lazy"&gt;</code></li>
                                 <li>Serve images in next-gen formats use WEBP</li>
-                                <li>Properly size the assets</li>
+                                <li>Properly size the image dimensions</li>
                                 <li>Compressed the images, you can use this <a href="https://tinypng.com/" target="_blank"><strong>TINY.PNG</strong></a></li>
                             </ul>
                         </div>
@@ -533,15 +540,29 @@
                             </p>
                         </div>
                         <div class="readme-body">
-                            <h3>Use of Heading Tags</h3>
+                            <h3>
+                                Meta Description
+                            </h3>
                             <p>
-                                When using <code class="cp">&lt;h1&gt;&lt;/h1&gt;</code>, <code class="cp">&lt;h2&gt;&lt;/h2&gt;</code>, <code class="cp">&lt;h3&gt;&lt;/h3&gt;</code>, <code class="cp">&lt;h4&gt;&lt;/h4&gt;</code>,<code class="cp">&lt;h5&gt;&lt;/h5&gt;</code>, <code class="cp">&lt;h6&gt;&lt;/h6&gt;</code> these heading:
+                                Dont forget <code class="t">&lt;meta name="description" content=""&gt;</code>
                             </p>
+                            <h3>Canonical URL</h3>
+                            <p>
+                                Dont forget <code class="t">&lt;link rel="canonical" href=""&gt;</code>
+                            </p>
+                            <h3>Hreflang</h3>
+                            <p>
+                                Use if website has multiple language, sample english <code class="t">&lt;link rel="alternate" href="pageurl" hrefLang="en"&gt;</code> and chinese<code class="t">&lt;link rel="alternate" href="pageurl/zh/" hrefLang="zh"&gt;</code>
+                            </p>
+                            <h3>Use of Heading Tags</h3>
                             <ul>
                                 <li>Make sure it has hierarchy</li>
-                                <li>Avoid multiple <code>h1</code> tag in page</li>
+                                <li>Avoid multiple <code class="t">&lt;h1&gt;</code> tag in the page</li>
                             </ul>
-                            <h3></h3>
+                            <h3>Images Alt Text</h3>
+                            <p>
+                                Make sure all images has alt text <code class="t">&lt;img alt=""&gt;</code>
+                            </p>
                         </div>
                     </div>
                     <div class="readme-group" id="accessibility">

@@ -354,11 +354,14 @@ br.s-mobile {
 .readme-sec .readme-group .readme-head .readme-subheading {
   margin-bottom: var(--gutter-space-40);
 }
-.readme-sec .readme-group .readme-body h3, .readme-sec .readme-group .readme-body h4, .readme-sec .readme-group .readme-body p {
-  margin: 0 0 var(--gutter-space-16) 0;
+.readme-sec .readme-group .readme-body h3, .readme-sec .readme-group .readme-body h4 {
+  margin: 0 0 var(--gutter-space-8) 0;
 }
-.readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol, .readme-sec .readme-group .readme-body img {
+.readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol, .readme-sec .readme-group .readme-body img, .readme-sec .readme-group .readme-body p {
   margin: 0 0 var(--gutter-space-24) 0;
+}
+.readme-sec .readme-group .readme-body p.mb-0 {
+  margin-bottom: 0;
 }
 .readme-sec .readme-group .readme-body code.t {
   padding: 0.2em 0.4em;

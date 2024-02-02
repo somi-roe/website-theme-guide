@@ -185,11 +185,17 @@
         }
 
         .readme-body {
-            h3, h4, p {
-                margin: 0 0 var(--gutter-space-16) 0;
+            h3, h4 {
+                margin: 0 0 var(--gutter-space-8) 0;
             }
-            table, ul, ol, img {
+            table, ul, ol, img, p {
                 margin: 0 0 var(--gutter-space-24) 0;
+            }
+
+            p {
+                &.mb-0 {
+                    margin-bottom: 0;
+                }
             }
 
             code {
