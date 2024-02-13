@@ -11,10 +11,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&family=Quattrocento+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;700&display=swap" rel="stylesheet">  
 
-    <link rel="preload" href="assets/css/general-home.css" as="style">
-    <link rel="stylesheet" href="assets/css/general-home.css" media="all" />
+    <link rel="preload" href="assets/css/general.css" as="style">
+    <link rel="stylesheet" href="assets/css/general.css" media="all">
 </head>
 <body>
     
@@ -25,32 +25,328 @@
             <source media="(max-width:400px)" srcset="assets/images/banner-image-sm.webp" width="400" height="600"> 
             <img fetchpriority="high" src="assets/images/banner-image-sm.webp" alt="banner-image-home" width="400" height="600">
         </picture>
-        <div class="banner-content">
-            <h1 class="banner-title">Welcome to the beach</h1>
-            <p class="banner-description">
+        <div class="container banner-content">
+            <h1 class="banner-title">Website Theme Creator</h1>
+            <p class="banner-description fs-special">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate nulla molestiae quaerat dolorem debitis obcaecati, maiores quisquam consectetur adipisci beatae?
             </p>
-            <a class="banner-cta" href="#">View More</a>
+            <a class="banner-cta cta-btn cta-btn-lg cta-white" href="#">Learn More</a>
         </div>  
     </section>
 
 
-    <br><br><br><br><br><br>
-
-
-    <section>
+    <section class="sec sec-ptb">
         <div class="container">
-            <h1>This is a test heading</h1>
+            <div class="sec-title sec-title-center">
+                <h2 class="sec-heading">Services Provided</h2>
+                <p class="sec-description">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                </p>
+            </div>
+            <ul class="cards cards-normal card-four">
+                <li>
+                    <div class="card-box card-box-center">
+                        <figure class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M320-240 80-480l240-240 57 57-184 184 183 183-56 56Zm320 0-57-57 184-184-183-183 56-56 240 240-240 240Z"/></svg>
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4">Web Development</h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est unde at quibusdam, molestias sint aliquid quas? Accusamus, in architecto!
+                            </p>
+                            <a class="card-btn cta-btn cta-primary" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-box card-box-center">
+                        <figure class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M280-80v-240h-64q-40 0-68-28t-28-68q0-29 16-53.5t42-36.5l262-116v-26q-36-13-58-43.5T360-760q0-50 35-85t85-35q50 0 85 35t35 85h-80q0-17-11.5-28.5T480-800q-17 0-28.5 11.5T440-760q0 17 11.5 28.5T480-720t28.5 11.5Q520-697 520-680v58l262 116q26 12 42 36.5t16 53.5q0 40-28 68t-68 28h-64v240H280Zm-64-320h64v-40h400v40h64q7 0 11.5-5t4.5-13q0-5-2.5-8.5T750-432L480-552 210-432q-5 2-7.5 5.5T200-418q0 8 4.5 13t11.5 5Zm144 240h240v-200H360v200Zm0-200h240-240Z"/></svg>
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4">UX Design</h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est unde at quibusdam, molestias sint aliquid quas? Accusamus, in architecto!
+                            </p>
+                            <a class="card-btn cta-btn cta-primary" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-box card-box-center">
+                        <figure class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4">Maintenance</h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est unde at quibusdam, molestias sint aliquid quas? Accusamus, in architecto!
+                            </p>
+                            <a class="card-btn cta-btn cta-primary" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-box card-box-center">
+                        <figure class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg>
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4">Photography</h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste est unde at quibusdam, molestias sint aliquid quas? Accusamus, in architecto!
+                            </p>
+                            <a class="card-btn cta-btn cta-primary" href="#">Learn More</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
         </div>
-        <ul>
-            <li>test 1</li>
-            <li>test 2</li>
-            <li>test 3</li>
-        </ul>
-
-        <button>tesr</button>
     </section>
 
+
+    <section class="sec sec-ptb sec-gray">
+        <div class="container">
+            <div class="sec-title sec-title-center">
+                <h2 class="sec-heading">Our Latest News</h2>
+                <p class="sec-description">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                </p>
+            </div>
+            <ul class="cards cards-bg card-three">
+                <li>
+                    <div class="card-box">
+                        <figure class="card-image">
+                            <img src="assets/images/blog-list-img.jpg" alt="">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4"><a href="#">How to Optimize Website</a></h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis repellendus temporibus provident quod incidunt repellat cumque earum quos delectus.
+                            </p>
+                            <a href="#" class="cta-btn cta-primary">Read Article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-box">
+                        <figure class="card-image">
+                            <img src="assets/images/blog-list-img.jpg" alt="">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4"><a href="#">How to use SEO</a></h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis repellendus temporibus provident quod incidunt repellat cumque earum quos delectus.
+                            </p>
+                            <a href="#" class="cta-btn cta-primary">Read Article</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="card-box">
+                        <figure class="card-image">
+                            <img src="assets/images/blog-list-img.jpg" alt="">
+                        </figure>
+                        <div class="card-content">
+                            <h3 class="card-title h-h4"><a href="#">Basic Photography Skills</a></h3>
+                            <p class="card-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis repellendus temporibus provident quod incidunt repellat cumque earum quos delectus.
+                            </p>
+                            <a href="#" class="cta-btn cta-primary">Read Article</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="sec sec-ptb">
+        <div class="container">
+            <div class="sec-title sec-title-center">
+                <h2 class="sec-heading">Frequently Asked Questions</h2>
+                <p class="sec-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis reiciendis repellendus temporibus provident quod incidunt repellat cumque earum quos delectus.
+                </p>
+            </div>
+            <ul class="accordion-faq">
+                <li class="accordion-item">
+                    <div class="accordion-box">
+                        <h3 class="accordion-button h-h4">
+                            <a href="#">
+                                1. Why our website is too slow?
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            </a>
+                        </h3>
+                        <div class="accordion-content-wrapper">
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odio eveniet, veritatis itaque deleniti vero magni tenetur sapiente recusandae aspernatur omnis ipsum dolor assumenda modi tempora quo illum! Porro ullam quas eos cupiditate enim commodi culpa praesentium, quae facere dolores?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <div class="accordion-box">
+                        <h3 class="accordion-button h-h4">
+                            <a href="#">
+                                2. How to optimize you website?
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            </a>
+                        </h3>
+                        <div class="accordion-content-wrapper">
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odio eveniet, veritatis itaque deleniti vero magni tenetur sapiente recusandae aspernatur omnis ipsum dolor assumenda modi tempora quo illum! Porro ullam quas eos cupiditate enim commodi culpa praesentium, quae facere dolores?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <div class="accordion-box">
+                        <h3 class="accordion-button h-h4">
+                            <a href="#">
+                                3. How to write efficient code?
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            </a>
+                        </h3>
+                        <div class="accordion-content-wrapper">
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odio eveniet, veritatis itaque deleniti vero magni tenetur sapiente recusandae aspernatur omnis ipsum dolor assumenda modi tempora quo illum! Porro ullam quas eos cupiditate enim commodi culpa praesentium, quae facere dolores?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <div class="accordion-box">
+                        <h3 class="accordion-button h-h4">
+                            <a href="#">
+                                4. Why our website is too slow?
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            </a>
+                        </h3>
+                        <div class="accordion-content-wrapper">
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odio eveniet, veritatis itaque deleniti vero magni tenetur sapiente recusandae aspernatur omnis ipsum dolor assumenda modi tempora quo illum! Porro ullam quas eos cupiditate enim commodi culpa praesentium, quae facere dolores?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item">
+                    <div class="accordion-box">
+                        <h3 class="accordion-button h-h4">
+                            <a href="#">
+                                5. Why our website is too slow?
+                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z"/></svg>
+                            </a>
+                        </h3>
+                        <div class="accordion-content-wrapper">
+                            <div class="accordion-content">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita odio eveniet, veritatis itaque deleniti vero magni tenetur sapiente recusandae aspernatur omnis ipsum dolor assumenda modi tempora quo illum! Porro ullam quas eos cupiditate enim commodi culpa praesentium, quae facere dolores?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="sec sec-ptb sec-gray">
+        <div class="container">
+            <div class="sec-title sec-title-center">
+                <h2 class="sec-heading">Contact Us</h2>
+                <p class="sec-description">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.
+                </p>
+            </div>
+            <div class="contact-form-wrapper">
+                <div class="col">
+                    <form id="form_contactus">
+                        <div class="input-row">
+                            <div class="input-col input-col-half">
+                                <input class="input-box" type="text" placeholder="Full Name">
+                                <span class="input-error"></span>
+                            </div>
+                            <div class="input-col input-col-half">
+                                <input class="input-box" type="email" placeholder="Email Address">
+                                <span class="input-error"></span>
+                            </div>
+                            <div class="input-col">
+                                <textarea class="input-box" placeholder="Message"></textarea>
+                                <span class="input-error"></span>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-col">
+                                <button type="submit" class="cta-btn cta-btn-lg cta-primary input-button">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const accordions = document.querySelectorAll(".accordion-faq .accordion-item");
+
+        accordions.forEach(function (accordion) {
+            const btn = accordion.querySelector(".accordion-button");
+
+            btn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // get current target
+            let targetClicked = e.target;
+
+                // when icon get click
+                let classClicked = targetClicked.classList;
+                while ((classClicked[0] != "accordion-button")) {
+                    targetClicked = targetClicked.parentElement;
+                    classClicked = targetClicked.classList;
+                }
+                // Get accordion content box
+                const description = targetClicked.nextElementSibling;
+
+                if (description.style.maxHeight){
+                    description.style.maxHeight = null;
+                    accordion.classList.remove("active");
+                } else {
+
+                    const accordionContent = document.querySelectorAll(".accordion-content");
+
+                    /* Open accordion one at a time */
+                    accordionContent.forEach(function (accordionText) {
+                    /* toggle active class and slidedown */
+                    if (accordionText.style.maxHeight){
+                        // console.log("there is a description already open");
+                        accordionText.parentElement.parentElement.classList.remove("active");
+                        accordionText.style.maxHeight = null;
+                    }
+                    });
+
+                    /* add active class & toggle slidedown height */
+                    accordion.classList.add("active");
+                    description.style.maxHeight = description.scrollHeight + "px";
+                    
+                }
+
+            });
+        });
+    </script>
 
 </body>
 </html>

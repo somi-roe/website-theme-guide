@@ -1,0 +1,9 @@
+.cta-btn {
+  display: block;
+  background-color: var(--color-bg-primary-solid);
+  color: var(--color-fg-onsolid);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-btn);
+  padding: 8px 24px;
+}

@@ -1,0 +1,54 @@
+.input-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -16px;
+    margin-right: -16px;
+
+    .input-col {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-bottom: 24px;
+    }
+
+
+    @include min-breakpoint(tabletlarge) {
+        .input-col {
+            &.input-col-half {
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+// default style on input type = text, email, 
+.input-box {
+    outline: none;
+    background-color: var(--color-bg-onsolid);
+    color: var(--color-fg-default);
+    border: 1px solid var(--border-color-light);
+    border-radius: var(--border-radius-8);
+    width: 100%;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: 1rem;
+    padding: 16px 20px;
+    
+    &::placeholder {
+        color: var(--color-fg-placeholder);
+    }
+
+    &:focus {
+        border-color: var(--border-color-input-hover);
+    }
+}
+
+.input-button {
+    width: 100%;
+}
+
+.input-error {
+    color: var(--color-fg-danger);
+    font-size: var(--fs-s);
+}

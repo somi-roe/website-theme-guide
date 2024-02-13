@@ -1,0 +1,47 @@
+.cta-btn {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--color-bg-default);
+    color: var(--color-fg-onsolid);
+    border-radius: var(--border-radius-8);
+    text-transform: uppercase;
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-r);
+    padding: 10px 25px;
+    transition: var(--transition-03);
+
+    &:hover {
+        background-color: var(--color-bg-primary-solid);
+    }
+
+    // button background
+    &.cta-primary {
+        background-color: var(--color-bg-primary-solid);
+
+        &:hover {
+            background-color: var(--color-bg-default);
+            color: var(--color-fg-onsolid);
+        }
+    }
+
+    &.cta-white {
+        background-color: var(--color-bg-onsolid);
+        color: var(--color-fg-primary-solid);
+
+        &:hover {
+            background-color: var(--color-bg-primary-solid);
+            color: var(--color-fg-onsolid);
+        }
+    }
+
+    // button sizes
+    &.cta-btn-lg {
+        font-size: var(--fs-btn);
+        padding: 15px 40px;
+    }
+}
+
+button {
+    border: none;
+}

@@ -1,7 +1,8 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: var(--clr-primary-1000); // defaul font color
+    background-color: var(--color-bg-onsolid);
+    color: var(--color-fg-default); // defaul font color
     font-family: var(--ff-body);
     font-weight: var(--fw-regular);
     font-size: var(--fs-r);
@@ -11,6 +12,7 @@ body {
 // fonts family
 h1, h2, h3, h4, h5, h6, .ff-heading {
     font-family: var(--ff-heading);
+    line-height: 1.1;
 }
 
 .ff-body {
@@ -36,6 +38,10 @@ h4, .h-h4 {
 
 p, .fs-regular {
     font-size: var(--fs-r);
+}
+
+.fs-special {
+    font-size: var(--fs-sp);
 }
 
 .fs-s,

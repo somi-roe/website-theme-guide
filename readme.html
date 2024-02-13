@@ -15,7 +15,7 @@
 
     <link rel="preload" href="assets/css/readme.css" as="style">
     <link rel="preload" href="assets/js/main.js" as="script">
-    <link rel="stylesheet" href="assets/css/readme.css" media="all" />
+    <link rel="stylesheet" href="assets/css/readme.css" media="all">
 </head>
 <body>
     
@@ -32,6 +32,7 @@
                     <li><a href="#" data-target="breakpoints" class="">Breakpoints</a></li>
                     <li><a href="#" data-target="spacing" class="">Spacing</a></li>
                     <li><a href="#" data-target="colors" class="">Colors</a></li>
+                    <li><a href="#" data-target="sass" class="">SASS</a></li>
                     <li><a href="#" data-target="pagespeed" class="">Page Speed Performance</a></li>
                     <li><a href="#" data-target="seo" class="">SEO Best Practices</a></li>
                     <li><a href="#" data-target="accessibility" class="">Accessibility</a></li>
@@ -317,19 +318,19 @@
                                         <td>> 400px large phone and up</td>
                                     </tr>
                                     <tr>
-                                        <td><code>tablet small</code></td>
+                                        <td><code>tabletsmall</code></td>
                                         <td>> 768px small tablet and up</td>
                                     </tr>
                                     <tr>
-                                        <td><code>table large</code></td>
+                                        <td><code>tablelarge</code></td>
                                         <td>> 992px large tablet and up</td>
                                     </tr>
                                     <tr>
-                                        <td><code>desktop small</code></td>
+                                        <td><code>desktopsmall</code></td>
                                         <td>> 1200px small desktop and up</td>
                                     </tr>
                                     <tr>
-                                        <td><code>desktop large</code></td>
+                                        <td><code>desktoplarge</code></td>
                                         <td>> 1400px large desktop and up</td>
                                     </tr>
                                 </tbody>
@@ -348,20 +349,16 @@
                                         <td>< 399px this will target all mobile devices</td>
                                     </tr>
                                     <tr>
-                                        <td><code>tablet small</code></td>
+                                        <td><code>tabletsmall</code></td>
                                         <td>< 991px this will target all small tablet devices</td>
                                     </tr>
                                     <tr>
-                                        <td><code>table large</code></td>
+                                        <td><code>tablelarge</code></td>
                                         <td>< 1199px this will target all large tablet devices</td>
                                     </tr>
                                     <tr>
-                                        <td><code>desktop small</code></td>
+                                        <td><code>desktopsmall</code></td>
                                         <td>< 1399px this will target all small desktop devices</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>desktop large</code></td>
-                                        <td>< 4999px this will target all large desktop devices</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -474,6 +471,69 @@
                             <h3>Border Colors</h3>
                         </div>
                     </div>
+                    <div class="readme-group" id="sass">
+                        <div class="readme-head">
+                            <h2>SASS Architecture</h2>
+                            <p>
+                                Utilize our source Sass files to take advantage of variable, mixins, and more.
+                            </p>
+                        </div>
+                        <div class="readme-body">
+                            <h3>File Structure</h3>
+                            <div class="bd-code-snippet">
+                                <div class="highlight">
+                                    <pre>
+                                        <code class="language-html">
+<span class="line"><span class="nt">├── 1-base/</span></span>
+<span class="line"><span class="s">│   └── mixins.scss</span></span>
+<span class="line"><span class="s">│   └── variables.scss</span></span>
+<span class="line"><span class="s">│   └── reset.scss</span></span>
+<span class="line"><span class="s">│   └── typography.scss</span></span>
+<span class="line"><span class="s">│   └── utilities.scss</span></span>
+<span class="line"><span class="nt">├── 2-plugin/</span></span>
+<span class="line"><span class="s">│   └── plugin-name.scss</span></span>
+<span class="line"><span class="nt">├── 3-layout/</span></span>
+<span class="line"><span class="s">│   └── grid.scss</span></span>
+<span class="line"><span class="s">│   └── navigation.scss</span></span>
+<span class="line"><span class="s">│   └── section.scss</span></span>
+<span class="line"><span class="s">│   └── footer.scss</span></span>
+<span class="line"><span class="nt">├── 4-components/</span></span>
+<span class="line"><span class="s">│   └── component-name.scss</span></span>
+<span class="line"><span class="nt">├── 5-pages/</span></span>
+<span class="line"><span class="s">│   └── page-name.scss</span></span>
+<span class="line"><span class="cl">└── general.scss</span></span>
+<span class="line"><span class="cl">└── general-home.scss</span></span>
+<span class="line"><span class="cl">└── general-others.scss</span></span>
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <h4>Base</h4>
+                            <p>
+                                This folder contains the style boilerplate of the project.
+                            </p>
+                            <h4>Plugin</h4>
+                            <p>
+                                This folder contains the style of the third-party plugin we use on the project, we self host this for version control.
+                            </p>
+                            <h4>Layout</h4>
+                            <p>
+                                This folder contains the default layout across the project, included here is the main parts on the project.
+                            </p>
+                            <h4>Components</h4>
+                            <p>
+                                This folder contains the specific kinds of modules use across the project.
+                            </p>
+                            <h4>Pages</h4>
+                            <p>
+                                This folder contains the unique style for the specific page, that we might dont need from other pages.
+                            </p>
+                            <h4>Main File</h4>
+                            <p>
+                                The main file can be three, general.scss, general-home.scss and general-others.scss. The general-home and general-others this is seperated file for the home page and other inner page to reduced unused style on the pages.
+                            </p>
+                        </div>
+                    </div>
                     <div class="readme-group" id="pagespeed">
                         <div class="readme-head">
                             <h2>Page Speed Performance</h2>
@@ -530,6 +590,11 @@
                                 <li>Properly size the image dimensions</li>
                                 <li>Compressed the images, you can use this <a href="https://tinypng.com/" target="_blank"><strong>TINY.PNG</strong></a></li>
                             </ul>
+                            <h3>Optimize Google Tag Manager</h3>
+                            <ul>
+                                <li>Keep Your Google Tag Manager Container Lean</li>
+                                <li>Identify tags that are no longer needed or serve redundant purposes.</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="readme-group" id="seo">
@@ -563,43 +628,59 @@
                             <p>
                                 Make sure all images has alt text <code class="t">&lt;img alt=""&gt;</code>
                             </p>
+                            <h3>Linking</h3>
+                            <p>
+                                <strong>External Link</strong><br>
+                                <code class="t">&lt;a target="_blank" rel="noreferrer noopener"&gt;&lt;/a&gt;</code>
+                            </p>
+                            <p>
+                                <strong>Pagination</strong><br>
+                                <code class="t">&lt;link rel="canonical" href="https://self"&gt;</code>
+                                <br>
+                                Page 1<br>
+                                <code class="t">&lt;link rel="canonical" href="https://site.com/"&gt;</code><br>
+                                <code class="t">&lt;link rel="next" href="https://site.com/page2/"&gt;</code><br>
+                                Page 2<br>
+                                <code class="t">&lt;link rel="prev" href="https://site.com/page1/"&gt;</code><br>
+                                <code class="t">&lt;link rel="canonical" href="https://site.com/"&gt;</code><br>
+                                <code class="t">&lt;link rel="next" href="https://site.com/page3/"&gt;</code>
+                            </p>
+                            <p>
+                                <strong>Avoid relative path</strong><br>
+                                <code class="t">&lt;a href="/blog/category/seo"&gt;&lt;/a&gt;</code>
+                            </p>
                         </div>
                     </div>
                     <div class="readme-group" id="accessibility">
                         <div class="readme-head">
                             <h2>Accessibility</h2>
+                            <p>
+                                Accessibility is crucial for ensuring that all users, including those with disabilities, can access and interact with your website effectively.
+                            </p>
                         </div>
                         <div class="readme-body">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Viewport Range</th>
-                                        <th>Width Range</th>
-                                        <th>Column Count</th>
-                                        <th>Description</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><code>narrow</code></td>
-                                        <td>< 575px</td>
-                                        <td>1</td>
-                                        <td>Support single column layout small tablet and mobile</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>regular</code></td>
-                                        <td>>= 768px</td>
-                                        <td>2</td>
-                                        <td>Support 2 column layout large tablet and small desktop</td>
-                                    </tr>
-                                    <tr>
-                                        <td><code>wide</code></td>
-                                        <td>>= 1200px</td>
-                                        <td>3</td>
-                                        <td>Support 3 column layout regular desktop and large desktop</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <h3>Correct Use of ARIA Landmarks</h3>
+                            <p>
+                                Utilize ARIA (Accessible Rich Internet Applications) landmarks to provide structure and navigation for assistive technologies. Use landmarks such as &lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;aside&gt;, &lt;footer&gt;, etc., appropriately to define the regions of your page.
+                            </p>
+                            <h3>Descriptive Alt Text for Images</h3>
+                            <p>
+                                Provide descriptive alternative text (alt text) for images to convey their content and purpose to users who cannot see them. Alt text should be concise and accurately describe the image. 
+                            </p>
+                            <ul>
+                                <li>We need to request to <strong>Content Team</strong> for all image asset dont have alt text.</li>
+                            </ul>
+                            <h3>Use of Accessible Colors</h3>
+                            <p>
+                                Ensure that text has sufficient contrast against the background color to be easily readable. Use tools like the Web Content Accessibility Guidelines (WCAG) color contrast checker to verify that your color choices meet accessibility standards. 
+                            </p>
+                            <ul>
+                                <li>We need to coordinate this with <strong>UX TEAM</strong> they need to make sure the color scheme we will use will passed the background contrast ratio checker.</li>
+                            </ul>
+                            <h3>Use of Semantic HTML</h3>
+                            <p>
+                                Use semantic HTML elements (e.g., &lt;nav&gt;, &lt;main&gt;, &lt;article&gt;, &lt;section&gt;, &lt;aside&gt;, &lt;footer&gt;) to provide structure and meaning to your content. Semantic HTML helps assistive technologies interpret and navigate your content more effectively.
+                            </p>
                         </div>
                     </div>
                 </div>

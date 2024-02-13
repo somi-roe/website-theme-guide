@@ -1,0 +1,44 @@
+.sec {
+    
+    // spacing top and bottom
+    &.sec-ptb {
+        padding: var(--space-72) 0;
+    }
+
+    // background colors
+    &.sec-gray {
+        background-color: var(--color-bg-light);
+    }
+
+    .sec-title {
+        margin: 0 0 var(--space-48) 0;
+
+        .sec-heading {
+            position: relative;
+            margin-top: -8px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 30px;
+                height: 5px;
+                background-color: var(--color-fg-primary-solid);
+            }
+        }
+
+        .sec-heading + .sec-description {
+            margin: var(--space-40) 0 0 0;
+        }   
+        
+
+        // sec title alignment
+        &.sec-title-center {
+            text-align: center;
+        }
+    }
+
+
+}

@@ -4,9 +4,6 @@
   @if $point == maxwidth {
     @media (max-width: $maxWidth) { @content; }
   }
-  @else if $point == desktoplarge {
-    @media (max-width: 4999px) { @content; }
-  }
   @else if $point == desktopsmall {
     @media (max-width: 1399px) { @content; }
   }

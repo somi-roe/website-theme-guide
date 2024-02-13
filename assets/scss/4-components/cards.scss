@@ -1,0 +1,90 @@
+.cards {
+    list-style-type: none;
+    display: grid;
+    column-gap: var(--space-16);
+    row-gap: var(--space-48);
+
+    h2,h3,h4,h5,h6 {
+        a {
+            color: inherit;
+            transition: var(--transition-03);
+    
+            &:hover {
+                color: var(--color-fg-primary-solid);
+            }
+        }
+    }
+
+    @include min-breakpoint(tabletsmall) {
+
+        &.card-two,
+        &.card-three,
+        &.card-four {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @include min-breakpoint(tabletlarge) {
+        &.card-three {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @include min-breakpoint(desktopsmall) {
+        gap: var(--space-32);
+
+        &.card-four {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+.cards-normal,
+.cards-bg {
+    .card-content {
+        .card-title {
+            margin: 0 0 var(--space-8);
+        }
+
+        .card-description {
+            margin: 0 0 var(--space-16) 0;
+        }
+    }
+}
+
+.cards-normal {
+
+    .card-box {
+        &.card-box-center {
+            text-align: center;
+        }
+    }
+
+    .card-icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--color-bg-primary-solid);
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        margin: 0 0 var(--space-16) 0;
+
+        svg {
+            fill: var(--color-bg-onsolid);
+        }
+    }
+}
+
+.cards-bg {
+
+    .card-box {
+        background-color: var(--color-bg-onsolid);
+        box-shadow: var(--box-shadow-default);
+        height: 100%;
+    }
+
+    .card-content {
+        padding: var(--space-24);
+    }
+}

@@ -1,46 +1,57 @@
 /* DEFAULt FOR ALL PAGES */
 /* Mixin for Responsive Breakpoints */
 :root {
-  --ff-primary: "Open Sans", sans-serif;
-  --ff-secondary: "Quattrocento Sans", sans-serif;
-  --ff-body: var(--ff-secondary);
+  --ff-primary: "Raleway", Arial, sans-serif;
+  --ff-secondary: "Lato", Arial, sans-serif;
   --ff-heading: var(--ff-primary);
+  --ff-body: var(--ff-secondary);
   --fw-regular: 400;
   --fw-semibold: 600;
   --fw-bold: 700;
-  --fs-s: 0.75rem;
+  --fs-btn: 1.125rem;
+  --fs-s: 0.875rem;
   --fs-r: 1rem;
-  --fs-m: 1.125rem;
-  --fs-l: 1.25rem;
-  --fs-xl: 1.5rem;
-  --fs-xxl: 2rem;
-  --clr-primary: rgba(0, 0, 0, 1);
-  --clr-secondary: rgba(244, 206, 20, 1);
-  --clr-base-300: rgba(242, 242, 242, 0.3);
-  --clr-base-500: rgba(242, 242, 242, 0.5);
-  --clr-base-1000: rgba(242, 242, 242, 1);
-  --clr-success: rgb(40, 167, 69, 1);
-  --clr-error: rgba(231, 76, 60, 1);
-  --clr-white: rgba(255, 255, 255, 1);
+  --fs-sp: 1.125rem;
+  --fs-m: 1.375rem;
+  --fs-l: 1.75rem;
+  --fs-xl: 2.188rem;
+  --fs-xxl: 2.813rem;
+  --color-fg-primary-solid: #0074E0;
+  --color-fg-default: #222222;
+  --color-fg-placeholder: #757575;
+  --color-fg-muted: #999999;
+  --color-fg-onsolid: #fff;
+  --color-fg-danger: #D30000;
+  --color-bg-primary-solid: #0074E0;
+  --color-bg-default: #222222;
+  --color-bg-muted: #999999;
+  --color-bg-onsolid: #fff;
+  --color-bg-light: #f9f9f9;
+  --color-bg-overlay: rgba(0, 0, 0, 0.7);
+  --border-radius-8: 8px;
+  --border-color-light: #ddd;
+  --border-color-input-hover: #2081D0;
+  --box-shadow-default: 0px 0px 10px rgba(0,0,0,0.10);
   --container-size: 992px;
-  --gutter-space-4: 4px;
-  --gutter-space-8: 8px;
-  --gutter-space-16: 16px;
-  --gutter-space-24: 24px;
-  --gutter-space-32: 32px;
-  --gutter-space-40: 40px;
-  --gutter-space-48: 48px;
-  --gutter-space-56: 56px;
-  --gutter-space-64: 64px;
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-16: 16px;
+  --space-24: 24px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
   --transition-03: 0.3s ease;
 }
 
 @media (min-width: 992px) {
   :root {
-    --fs-m: 1.25rem;
-    --fs-l: 1.5rem;
-    --fs-xl: 2rem;
-    --fs-xxl: 2.5rem;
+    --fs-m: 1.5rem;
+    --fs-l: 2rem;
+    --fs-xl: 3.125rem;
+    --fs-xxl: 4.063rem;
   }
 }
 @media (min-width: 1200px) {
@@ -104,10 +115,15 @@ table {
   border-spacing: 0;
 }
 
+textarea {
+  resize: none;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--clr-primary-1000);
+  background-color: var(--color-bg-onsolid);
+  color: var(--color-fg-default);
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
   font-size: var(--fs-r);
@@ -116,6 +132,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .ff-heading {
   font-family: var(--ff-heading);
+  line-height: 1.1;
 }
 
 .ff-body {
@@ -140,6 +157,10 @@ h4, .h-h4 {
 
 p, .fs-regular {
   font-size: var(--fs-r);
+}
+
+.fs-special {
+  font-size: var(--fs-sp);
 }
 
 .fs-s,
@@ -205,16 +226,16 @@ br.s-mobile {
 .container {
   width: 100%;
   max-width: var(--container-size);
-  padding-left: var(--gutter-space-16);
-  padding-right: var(--gutter-space-16);
+  padding-left: var(--space-24);
+  padding-right: var(--space-24);
   margin-left: auto;
   margin-right: auto;
 }
 @media (min-width: 1200px) {
   .container {
     max-width: var(--container-size);
-    padding-left: var(--gutter-space-32);
-    padding-right: var(--gutter-space-32);
+    padding-left: var(--space-32);
+    padding-right: var(--space-32);
   }
 }
 
@@ -246,19 +267,19 @@ br.s-mobile {
 }
 .readme-sec .container-full aside {
   width: 20%;
-  padding: var(--gutter-space-24);
+  padding: var(--space-24);
   border-right: 1px solid rgba(27, 31, 36, 0.15);
 }
 .readme-sec .container-full aside p {
   color: var(--clr-primary-500);
-  margin-bottom: var(--gutter-space-16);
+  margin-bottom: var(--space-16);
 }
 .readme-sec .container-full aside ul li {
   color: var(--clr-primary-1000);
   font-family: var(--ff-heading);
   font-weight: var(--fw-regular);
   font-size: var(--fs-r);
-  margin: 0 0 var(--gutter-space-24) 0;
+  margin: 0 0 var(--space-24) 0;
 }
 .readme-sec .container-full aside ul li a {
   color: inherit;
@@ -274,21 +295,21 @@ br.s-mobile {
 }
 .readme-sec .container-full article {
   width: 80%;
-  padding: var(--gutter-space-48);
+  padding: var(--space-48);
 }
 .readme-sec table {
   border-collapse: separate;
   border-spacing: 0px;
   overflow: auto;
   width: 100%;
-  margin: 0 0 var(--gutter-space-16) 0;
+  margin: 0 0 var(--space-16) 0;
 }
 .readme-sec table p, .readme-sec table h3, .readme-sec table h4 {
   margin-bottom: 0 !important;
 }
 .readme-sec table th,
 .readme-sec table td {
-  padding: var(--gutter-space-16);
+  padding: var(--space-16);
   border-color: #d8dee4;
   border-style: solid;
   border-width: 1px 0px 0px 1px;
@@ -323,7 +344,7 @@ br.s-mobile {
 }
 .readme-sec .readme-group {
   display: none;
-  margin: 0 0 var(--gutter-space-40) 0;
+  margin: 0 0 var(--space-40) 0;
 }
 .readme-sec .readme-group.active {
   display: block;
@@ -346,22 +367,26 @@ br.s-mobile {
   list-style-type: decimal;
 }
 .readme-sec .readme-group .readme-head {
-  margin: 0 0 var(--gutter-space-32) 0;
+  margin: 0 0 var(--space-32) 0;
 }
 .readme-sec .readme-group .readme-head h2 {
-  margin: 0 0 var(--gutter-space-8) 0;
+  margin: 0 0 var(--space-8) 0;
 }
 .readme-sec .readme-group .readme-head .readme-subheading {
-  margin-bottom: var(--gutter-space-40);
+  margin-bottom: var(--space-40);
 }
 .readme-sec .readme-group .readme-body h3, .readme-sec .readme-group .readme-body h4 {
-  margin: 0 0 var(--gutter-space-8) 0;
+  margin: 0 0 var(--space-16) 0;
 }
 .readme-sec .readme-group .readme-body table, .readme-sec .readme-group .readme-body ul, .readme-sec .readme-group .readme-body ol, .readme-sec .readme-group .readme-body img, .readme-sec .readme-group .readme-body p {
-  margin: 0 0 var(--gutter-space-24) 0;
+  margin: 0 0 var(--space-24) 0;
 }
 .readme-sec .readme-group .readme-body p.mb-0 {
   margin-bottom: 0;
+}
+.readme-sec .readme-group .readme-body p code {
+  display: inline-block;
+  margin-bottom: 6px;
 }
 .readme-sec .readme-group .readme-body code.t {
   padding: 0.2em 0.4em;
@@ -391,12 +416,12 @@ br.s-mobile {
 .readme-sec .bd-code-snippet {
   border: 1px solid #d8dee4;
   border-radius: 8px;
-  margin-bottom: var(--gutter-space-24);
+  margin-bottom: var(--space-24);
 }
 .readme-sec .bd-code-snippet .highlight {
   position: relative;
   background-color: rgba(234, 238, 242, 0.5);
-  padding: var(--gutter-space-24);
+  padding: var(--space-24);
 }
 .readme-sec .bd-code-snippet .highlight pre {
   text-align: left;
