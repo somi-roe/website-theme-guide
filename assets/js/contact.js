@@ -6,34 +6,34 @@ const projectContact = {
 
             validate: function () {
 
-                const form_contact = document.getElementById("form_contact");
+                const form_contact = document.getElementById("form_contactus");
 
                 if(form_contact) {
 
-                    const name = document.getElementById("name");
+                    const fullname = document.getElementById("fullname");
                     const email = document.getElementById("email");
-                    const country = document.getElementById("message");
+                    const message = document.getElementById("message");
 
                     function checkForm() {
 
-                        const name_val = name.value.trim();
+                        const fullname_val = fullname.value.trim();
                         const email_val = email.value.trim();
                         const message_val = message.value.trim();
 
                         let hasError = false;
 
                         // name
-                        if(name_val === '') {
-                            setErrorForInput(name, 'This field should not be empty');
+                        if(fullname_val === '') {
+                            setErrorForInput(fullname, 'This field should not be empty');
                             hasError = true;
-                        } else if (name_val.length < 2) {
-                            setErrorForInput(name, 'First Name must be at least 2 characters');
+                        } else if (fullname_val.length < 2) {
+                            setErrorForInput(fullname, 'Full Name must be at least 2 characters');
                             hasError = true;
-                        } else if (!isName(name_val)) {
-                            setErrorForInput(name, 'Must not contain special characters: @\/:*?"<>|');
+                        } else if (!isName(fullname_val)) {
+                            setErrorForInput(fullname, 'Must not contain special characters: @\/:*?"<>|');
                             hasError = true;
                         } else {
-                            setSuccessForInput(name);
+                            setSuccessForInput(fullname);
                         }
 
                         // email
@@ -81,8 +81,8 @@ const projectContact = {
         }
 
         function setErrorForInput(input, text) {
-            const inputWrap = input.parentElement;
-            const errorText = inputWrap.querySelector('.input-error');
+            const inputWrap = input;
+            const errorText = inputWrap.parentElement.querySelector('.input-error');
             // const inputField = inputWrap.querySelector('.input-field');
             inputWrap.classList.remove("success");
             inputWrap.classList.add("error");
@@ -93,8 +93,8 @@ const projectContact = {
 
         }
         function setSuccessForInput(input) {
-            const inputWrap = input.parentElement;
-            const errorText = inputWrap.querySelector('.input-error');
+            const inputWrap = input;
+            const errorText = inputWrap.parentElement.querySelector('.input-error');
             // const inputField = inputWrap.querySelector('.input-field');
             inputWrap.classList.remove("error");
             inputWrap.classList.add("success");

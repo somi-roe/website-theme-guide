@@ -7,7 +7,7 @@
 
     // background colors
     &.sec-gray {
-        background-color: var(--color-bg-light);
+        background-color: var(--bg-subtle);
     }
 
     .sec-title {
@@ -25,7 +25,7 @@
                 transform: translateX(-50%);
                 width: 30px;
                 height: 5px;
-                background-color: var(--color-fg-primary-solid);
+                background-color: var(--fg-primary);
             }
         }
 

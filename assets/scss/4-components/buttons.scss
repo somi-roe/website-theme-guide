@@ -1,8 +1,8 @@
 .cta-btn {
     cursor: pointer;
     display: inline-block;
-    background-color: var(--color-bg-default);
-    color: var(--color-fg-onsolid);
+    background-color: var(--bg-default);
+    color: var(--fg-onsolid);
     border-radius: var(--border-radius-8);
     text-transform: uppercase;
     font-family: var(--ff-body);
@@ -12,26 +12,26 @@
     transition: var(--transition-03);
 
     &:hover {
-        background-color: var(--color-bg-primary-solid);
+        background-color: var(--bg-primary);
     }
 
     // button background
     &.cta-primary {
-        background-color: var(--color-bg-primary-solid);
+        background-color: var(--bg-primary);
 
         &:hover {
-            background-color: var(--color-bg-default);
-            color: var(--color-fg-onsolid);
+            background-color: var(--bg-default);
+            color: var(--fg-onsolid);
         }
     }
 
     &.cta-white {
-        background-color: var(--color-bg-onsolid);
-        color: var(--color-fg-primary-solid);
+        background-color: var(--bg-onsolid);
+        color: var(--fg-primary);
 
         &:hover {
-            background-color: var(--color-bg-primary-solid);
-            color: var(--color-fg-onsolid);
+            background-color: var(--bg-primary);
+            color: var(--fg-onsolid);
         }
     }
 

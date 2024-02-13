@@ -431,44 +431,181 @@
                     <div class="readme-group" id="colors">
                         <div class="readme-head">
                             <h2>Colors</h2>
-                            <p>
-                                This will target the common scenarios when designing responsive layouts and also shows the default column count per viewport ranges.
-                            </p>
+                            <ul>
+                                <li>
+                                    <strong>Foundations</strong>: Foregrounds (text and icons), backgrounds, and borders that make up most of a element interface.
+                                </li>
+                                <li>
+                                    <strong>Color roles</strong>: Foregrounds (text and icons), backgrounds, and borders that highlight affordance or the meaning of elements in the UI.
+                                </li>
+                            </ul>
                         </div>
                         <div class="readme-body">
-                            <h3>Text Colors</h3>
+                            <h3>Foregrounds Colors</h3>
                             <table>
                                 <thead>
                                     <tr>
-                                        <th>Viewport Range</th>
-                                        <th>Width Range</th>
-                                        <th>Column Count</th>
-                                        <th>Description</th>
+                                        <th>Foundations</th>
+                                        <th>Usage</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><code>narrow</code></td>
-                                        <td>< 575px</td>
-                                        <td>1</td>
-                                        <td>Support single column layout small tablet and mobile</td>
+                                        <td>
+                                            <span class="c-box fg-default"></span>
+                                            <code>--fg-default</code>
+                                        </td>
+                                        <td>Use for default content body</td>
                                     </tr>
                                     <tr>
-                                        <td><code>regular</code></td>
-                                        <td>>= 768px</td>
-                                        <td>2</td>
-                                        <td>Support 2 column layout large tablet and small desktop</td>
+                                        <td>
+                                            <span class="c-box fg-muted"></span>
+                                            <code>--fg-muted</code>
+                                        </td>
+                                        <td>Use for content that is secondary</td>
                                     </tr>
                                     <tr>
-                                        <td><code>wide</code></td>
-                                        <td>>= 1200px</td>
-                                        <td>3</td>
-                                        <td>Support 3 column layout regular desktop and large desktop</td>
+                                        <td>
+                                            <span class="c-box fg-onsolid"></span>
+                                            <code>--fg-onsolid</code>
+                                        </td>
+                                        <td>Use to combine for solid backgrounds</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box fg-placeholder"></span>
+                                            <code>--fg-placeholder</code>
+                                        </td>
+                                        <td>Use for placeholder text or icons</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Roles</th>
+                                        <th>Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box fg-primary"></span>
+                                            <code>--fg-primary</code>
+                                        </td>
+                                        <td>Use for main theme of the site</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box fg-danger"></span>
+                                            <code>--fg-danger</code>
+                                        </td>
+                                        <td>Use to emphasize an error</td>
                                     </tr>
                                 </tbody>
                             </table>
                             <h3>Background Colors</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Foundations</th>
+                                        <th>Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-default"></span>
+                                            <code>--bg-default</code>
+                                        </td>
+                                        <td>Use for default background and provide highest contrast</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-muted"></span>
+                                            <code>--bg-muted</code>
+                                        </td>
+                                        <td>Use for disabled content</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-onsolid"></span>
+                                            <code>--bg-onsolid</code>
+                                        </td>
+                                        <td>Use to combine for solid text color</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-subtle"></span>
+                                            <code>--bg-subtle</code>
+                                        </td>
+                                        <td>Use to provide contrast against white background</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Roles</th>
+                                        <th>Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-primary"></span>
+                                            <code>--bg-primary</code>
+                                        </td>
+                                        <td>Use for main theme of the site</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-danger"></span>
+                                            <code>--bg-danger</code>
+                                        </td>
+                                        <td>Use to emphasize an error</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box bg-overlay"></span>
+                                            <code>--bg-overlay</code>
+                                        </td>
+                                        <td>Use for background overlay</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                             <h3>Border Colors</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Foundations</th>
+                                        <th>Usage</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box border-default"></span>
+                                            <code>--border-default</code>
+                                        </td>
+                                        <td>Use for default border</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box border-primary"></span>
+                                            <code>--border-primary</code>
+                                        </td>
+                                        <td>Use for input hover or focus</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="c-box border-danger"></span>
+                                            <code>--border-danger</code>
+                                        </td>
+                                        <td>Use to emphasize an error</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div class="readme-group" id="sass">
@@ -609,15 +746,19 @@
                                 Meta Description
                             </h3>
                             <p>
-                                Dont forget <code class="t">&lt;meta name="description" content=""&gt;</code>
+                                Dont forget <code class="t">&lt;meta name="description" content="sample meta description"&gt;</code>
                             </p>
                             <h3>Canonical URL</h3>
                             <p>
-                                Dont forget <code class="t">&lt;link rel="canonical" href=""&gt;</code>
+                                Dont forget <code class="t">&lt;link rel="canonical" href="https://example.com"&gt;</code>
                             </p>
                             <h3>Hreflang</h3>
                             <p>
-                                Use if website has multiple language, sample english <code class="t">&lt;link rel="alternate" href="pageurl" hrefLang="en"&gt;</code> and chinese<code class="t">&lt;link rel="alternate" href="pageurl/zh/" hrefLang="zh"&gt;</code>
+                                Hreflang is a markup used in HTML to indicate to search engines the language and/or regional targeting of content on a website. It helps search engines understand which version of a page to serve to users based on their language and location preferences. This is particularly important for websites that have content available in multiple languages or targeted to different regions.
+                            </p>
+                            <p>
+                                <code class="t">&lt;link rel="alternate" hrefLang="en" href="https://example.com/english-page"&gt;</code><br>
+                                <code class="t">&lt;link rel="alternate" hrefLang="es" href="https://example.com/spanish-page"&gt;</code>
                             </p>
                             <h3>Use of Heading Tags</h3>
                             <ul>
@@ -626,15 +767,20 @@
                             </ul>
                             <h3>Images Alt Text</h3>
                             <p>
-                                Make sure all images has alt text <code class="t">&lt;img alt=""&gt;</code>
+                                Make sure all images has descriptive alt text <code class="t">&lt;img alt="this is sample alt text"&gt;</code>
                             </p>
                             <h3>Linking</h3>
                             <p>
                                 <strong>External Link</strong><br>
-                                <code class="t">&lt;a target="_blank" rel="noreferrer noopener"&gt;&lt;/a&gt;</code>
+                                <code class="t">&lt;a href="https://external.com" target="_blank" rel="noreferrer noopener"&gt;page link&lt;/a&gt;</code>
                             </p>
+                            <h3>Pagination</h3>
+                            <ul>
+                                <li>Implement rel=prev and rel=next tags for paginated content to help search engines understand the relationship between pages.</li>
+                                <li>Use canonical tags to consolidate duplicate content across paginated pages.</li>
+                                <li>Ensure a consistent user experience across paginated pages, including navigation and content presentation.</li>
+                            </ul>
                             <p>
-                                <strong>Pagination</strong><br>
                                 <code class="t">&lt;link rel="canonical" href="https://self"&gt;</code>
                                 <br>
                                 Page 1<br>
@@ -642,13 +788,26 @@
                                 <code class="t">&lt;link rel="next" href="https://site.com/page2/"&gt;</code><br>
                                 Page 2<br>
                                 <code class="t">&lt;link rel="prev" href="https://site.com/page1/"&gt;</code><br>
-                                <code class="t">&lt;link rel="canonical" href="https://site.com/"&gt;</code><br>
+                                <code class="t">&lt;link rel="canonical" href="https://site.com/?page=2"&gt;</code><br>
                                 <code class="t">&lt;link rel="next" href="https://site.com/page3/"&gt;</code>
                             </p>
+                            <h3>Protocol-relative Path</h3>
                             <p>
-                                <strong>Avoid relative path</strong><br>
-                                <code class="t">&lt;a href="/blog/category/seo"&gt;&lt;/a&gt;</code>
+                                <strong>avoid relative path</strong><br>
+                                <code class="t">&lt;a href="/blog/category/seo"&gt;seo&lt;/a&gt;</code>
                             </p>
+                            <h3>URL Structure</h3>
+                            <ul>
+                                <li>Always use https</li>
+                                <li>If possible, hide www</li>
+                                <li>Always use absolute path</li>
+                                <li>Lower-case-separated-by-hyphen</li>
+                                <li>Preferably no .htm/.html extension (attachments are fine - pdf, docx, etc.)</li>
+                                <li>Make-it-seo-friendly</li>
+                                <li>Avoid-stop-words (eg the, and, or, of, a, an, to, for)</li>
+                                <li>Make sure to redirect old URLs</li>
+                                <li>Avoid dates blog/2022/07/23/blog-title</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="readme-group" id="accessibility">

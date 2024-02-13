@@ -2,7 +2,7 @@
     list-style-type: none;
 
     .accordion-item {
-        border: 1px solid var(--border-color-light);
+        border: 1px solid var(--border-default);
         border-radius: var(--border-radius-8);
         margin-bottom: var(--space-24);
     }
@@ -43,15 +43,15 @@
     .accordion-item.active {
         
         .accordion-item {
-            background-color: var(--color-bg-light);
+            background-color: var(--bg-subtle);
         }
 
         .accordion-button {
-            background-color: var(--color-bg-primary-solid);
-            color: var(--color-fg-onsolid);
+            background-color: var(--bg-primary);
+            color: var(--fg-onsolid);
 
             svg {
-                fill: var(--color-fg-onsolid);
+                fill: var(--fg-onsolid);
                 transform: rotate(-180deg);
             }
         }

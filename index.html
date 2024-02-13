@@ -273,15 +273,15 @@
                     <form id="form_contactus">
                         <div class="input-row">
                             <div class="input-col input-col-half">
-                                <input class="input-box" type="text" placeholder="Full Name">
+                                <input class="input-box" type="text" id="fullname" name="fullname" placeholder="Full Name">
                                 <span class="input-error"></span>
                             </div>
                             <div class="input-col input-col-half">
-                                <input class="input-box" type="email" placeholder="Email Address">
+                                <input class="input-box" type="email" id="email" name="email" placeholder="Email Address">
                                 <span class="input-error"></span>
                             </div>
                             <div class="input-col">
-                                <textarea class="input-box" placeholder="Message"></textarea>
+                                <textarea class="input-box" id="message" name="message" placeholder="Message"></textarea>
                                 <span class="input-error"></span>
                             </div>
                         </div>
@@ -299,7 +299,7 @@
         </div>
     </section>
 
-
+    
     <script>
         const accordions = document.querySelectorAll(".accordion-faq .accordion-item");
 
@@ -347,6 +347,7 @@
             });
         });
     </script>
+    <script src="assets/js/contact.js"></script>  
 
 </body>
 </html>

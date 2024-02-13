@@ -1,7 +1,7 @@
 .cta-btn {
   display: block;
-  background-color: var(--color-bg-primary-solid);
-  color: var(--color-fg-onsolid);
+  background-color: var(--bg-primary);
+  color: var(--fg-onsolid);
   font-family: var(--ff-body);
   font-weight: var(--fw-bold);
   font-size: var(--fs-btn);

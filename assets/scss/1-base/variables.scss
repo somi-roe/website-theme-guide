@@ -25,30 +25,35 @@
     --fs-xxl: 2.813rem; // 45px
 
 
-    // text colors
-    --color-fg-primary-solid: #0074E0;
-    --color-fg-default: #222222;
-    --color-fg-placeholder: #757575;
-    --color-fg-muted: #999999;
-    --color-fg-onsolid: #fff;
-    --color-fg-danger: #D30000;
+    // foreground colors foundation
+    --fg-default: #222;
+    --fg-muted: #6c757d;
+    --fg-onsolid: #fff;
+    --fg-placeholder: #cecece;
+
+    // foregroud colors role
+    --fg-primary: #0074E0;
+    --fg-danger: #D30000;
     
 
-    // background colors
-    --color-bg-primary-solid: #0074E0;
-    --color-bg-default: #222222;
-    --color-bg-muted: #999999;
-    --color-bg-onsolid: #fff;
-    --color-bg-light: #f9f9f9;
+    // background colors foundation
+    --bg-default: #222;
+    --bg-muted: #6c757d;
+    --bg-onsolid: #fff;
+    --bg-subtle: #f9f9f9;
 
-    --color-bg-overlay: rgba(0, 0, 0, 0.7);
+    // background colors role
+    --bg-primary: #0074E0;
+    --bg-danger: #D30000;
+    --bg-overlay: rgba(0,0,0,0.7);
 
+    // border colors
+    --border-default: #ddd;
+    --border-primary: #2081D0;
+    --border-danger: #D30000;
 
     // borders colors, radius
     --border-radius-8: 8px;
-
-    --border-color-light: #ddd;
-    --border-color-input-hover: #2081D0;
 
     // box shadows
     --box-shadow-default: 0px 0px 10px rgba(0,0,0,0.10);

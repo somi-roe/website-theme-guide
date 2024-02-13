@@ -16,21 +16,23 @@
   --fs-l: 1.75rem;
   --fs-xl: 2.188rem;
   --fs-xxl: 2.813rem;
-  --color-fg-primary-solid: #0074E0;
-  --color-fg-default: #222222;
-  --color-fg-placeholder: #757575;
-  --color-fg-muted: #999999;
-  --color-fg-onsolid: #fff;
-  --color-fg-danger: #D30000;
-  --color-bg-primary-solid: #0074E0;
-  --color-bg-default: #222222;
-  --color-bg-muted: #999999;
-  --color-bg-onsolid: #fff;
-  --color-bg-light: #f9f9f9;
-  --color-bg-overlay: rgba(0, 0, 0, 0.7);
+  --fg-default: #222;
+  --fg-muted: #6c757d;
+  --fg-onsolid: #fff;
+  --fg-placeholder: #cecece;
+  --fg-primary: #0074E0;
+  --fg-danger: #D30000;
+  --bg-default: #222;
+  --bg-muted: #6c757d;
+  --bg-onsolid: #fff;
+  --bg-subtle: #f9f9f9;
+  --bg-primary: #0074E0;
+  --bg-danger: #D30000;
+  --bg-overlay: rgba(0,0,0,0.7);
+  --border-default: #ddd;
+  --border-primary: #2081D0;
+  --border-danger: #D30000;
   --border-radius-8: 8px;
-  --border-color-light: #ddd;
-  --border-color-input-hover: #2081D0;
   --box-shadow-default: 0px 0px 10px rgba(0,0,0,0.10);
   --container-size: 992px;
   --space-4: 4px;
@@ -122,8 +124,8 @@ textarea {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--color-bg-onsolid);
-  color: var(--color-fg-default);
+  background-color: var(--bg-onsolid);
+  color: var(--fg-default);
   font-family: var(--ff-body);
   font-weight: var(--fw-regular);
   font-size: var(--fs-r);
@@ -395,6 +397,64 @@ br.s-mobile {
   border-radius: 4px;
   font-weight: var(--fw-bold);
   font-size: var(--fs-s);
+}
+.readme-sec .c-box {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 25px;
+  height: 25px;
+  top: 6px;
+  margin-right: 8px;
+}
+.readme-sec .c-box.fg-default {
+  background-color: var(--fg-default);
+}
+.readme-sec .c-box.fg-muted {
+  background-color: var(--fg-muted);
+}
+.readme-sec .c-box.fg-onsolid {
+  background-color: var(--fg-onsolid);
+}
+.readme-sec .c-box.fg-placeholder {
+  background-color: var(--fg-placeholder);
+}
+.readme-sec .c-box.fg-primary {
+  background-color: var(--fg-primary);
+}
+.readme-sec .c-box.fg-danger {
+  background-color: var(--fg-danger);
+}
+.readme-sec .c-box.bg-default {
+  background-color: var(--bg-default);
+}
+.readme-sec .c-box.bg-muted {
+  background-color: var(--bg-muted);
+}
+.readme-sec .c-box.bg-onsolid {
+  background-color: var(--bg-onsolid);
+}
+.readme-sec .c-box.bg-subtle {
+  background-color: var(--bg-subtle);
+}
+.readme-sec .c-box.bg-primary {
+  background-color: var(--bg-primary);
+}
+.readme-sec .c-box.bg-danger {
+  background-color: var(--bg-danger);
+}
+.readme-sec .c-box.bg-overlay {
+  background-color: var(--bg-overlay);
+}
+.readme-sec .c-box.border-default {
+  background-color: var(--border-default);
+}
+.readme-sec .c-box.border-primary {
+  background-color: var(--border-primary);
+}
+.readme-sec .c-box.border-danger {
+  background-color: var(--border-danger);
 }
 .readme-sec code {
   font-family: monospace;

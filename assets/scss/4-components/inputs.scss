@@ -25,9 +25,9 @@
 // default style on input type = text, email, 
 .input-box {
     outline: none;
-    background-color: var(--color-bg-onsolid);
-    color: var(--color-fg-default);
-    border: 1px solid var(--border-color-light);
+    background-color: var(--bg-onsolid);
+    color: var(--fg-default);
+    border: 1px solid var(--border-default);
     border-radius: var(--border-radius-8);
     width: 100%;
     font-family: var(--ff-body);
@@ -36,11 +36,15 @@
     padding: 16px 20px;
     
     &::placeholder {
-        color: var(--color-fg-placeholder);
+        color: var(--fg-placeholder);
     }
 
     &:focus {
-        border-color: var(--border-color-input-hover);
+        border-color: var(--border-primary);
+    }
+
+    &.error {
+        border-color: var(--border-danger);
     }
 }
 
@@ -49,6 +53,12 @@
 }
 
 .input-error {
-    color: var(--color-fg-danger);
+    color: var(--fg-danger);
     font-size: var(--fs-s);
+
+    svg {
+        position: relative;
+        top: 2px;
+        margin-right: 4px;
+    }
 }
